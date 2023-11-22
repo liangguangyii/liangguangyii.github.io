@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes for Python
+title: Notes for DeepLearning
 tags: [Python, DeepLearning]
 categories: notes
 toc: true
