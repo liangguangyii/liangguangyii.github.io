@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Notes for Python
-tags: [Python]
+tags: [Python, "Computer Science"]
 categories: notes
 toc: true
 math: true
