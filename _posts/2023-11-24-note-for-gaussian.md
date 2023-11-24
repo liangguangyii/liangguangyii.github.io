@@ -65,7 +65,7 @@ Here `Maximum Force` and `RMS Force` are the maximum and root-mean-square of the
 
         - loose the convergence criteria, by setting `scf=conver=6`(`scf=conver=8` is the default value), together with `IOp(7/127=-99) IOp(8/117=-99)` to avoid the error of the SCF procedure.
 
-        - set `scf=vshift=N` N is a value between 300 to 500, to boarden the interval between LUMO and HOMO, without changing the final result.
+        - set `scf=vshift=N`(for heavy atoms or metal) N is a value between 300 to 500, to boarden the interval between LUMO and HOMO, without changing the final result.
 
         - use the old converged output filed as the inital guess of wave function, by setting the correct chk file path and `guess=read`.
 
