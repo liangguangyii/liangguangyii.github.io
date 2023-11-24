@@ -55,18 +55,20 @@ Here `Maximum Force` and `RMS Force` are the maximum and root-mean-square of the
 
     There are mainly two ways that are most used:
         
-        - increase the number of opt iterations, by setting `opt=maxcyc=N`, if result is near the convergence point.
+    - increase the number of opt iterations, by setting `opt=maxcyc=N`, if result is near the convergence point.
 
-        - change other method, or loose the convergence criteria.
+    - change other method, or loose the convergence criteria.
 
 - if unconvergence happens in the inner loop, then it's the SCF problem, also mentioned in [Tian Lu's bolg](http://sobereva.com/61)
 
     There are mainly three ways that are most used:
 
-        - loose the convergence criteria, by setting `scf=conver=6`(`scf=conver=8` is the default value), together with `IOp(7/127=-99) IOp(8/117=-99)` to avoid the error of the SCF procedure.
+    - loose the convergence criteria, by setting `scf=conver=6`(`scf=conver=8` is the default value), together with `IOp(7/127=-99) IOp(8/117=-99)` to avoid the error of the SCF procedure.
 
-        - set `scf=vshift=N`(for heavy atoms or metal) N is a value between 300 to 500, to boarden the interval between LUMO and HOMO, without changing the final result.
+    - set `scf=vshift=N`(for heavy atoms or metal) N is a value between 300 to 500, to boarden the interval between LUMO and HOMO, without changing the final result.
 
-        - use the old converged output filed as the inital guess of wave function, by setting the correct chk file path and `guess=read`.
+    - use the old converged output filed as the inital guess of wave function, by setting the correct chk file path and `guess=read`.
 
 **Notice:** the output from this modified is only the result of a corase calculation, especially for the modification on the convergence criteria. Calculation task with defauly sets is needed after the convergence of the initial guess.
+
+**Notice:** `scf=conver=6` and `IOp(7/127=-99) IOp(8/117=-99)` could only avoid the SCF error in the geometry optimization process, at the end of the calculation task, in the analysis of the physical inforamtion, SCF error is still raised.
