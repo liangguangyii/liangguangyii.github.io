@@ -71,4 +71,4 @@ Here `Maximum Force` and `RMS Force` are the maximum and root-mean-square of the
 
 **Notice:** the output from this modified is only the result of a corase calculation, especially for the modification on the convergence criteria. Calculation task with defauly sets is needed after the convergence of the initial guess.
 
-**Notice:** `scf=conver=6` and `IOp(7/127=-99) IOp(8/117=-99)` could only avoid the SCF error in the geometry optimization process, at the end of the calculation task, in the analysis of the physical inforamtion, SCF error is still raised.
+**Notice:** `scf=conver=6` and `IOp(7/127=-99) IOp(8/117=-99)` could only avoid the SCF error in the geometry optimization process, at the end of the calculation task, in the analysis of the physical inforamtion, SCF error is still raised. Then I suggest to use this "fault"(I mean, SCF done by only error in the calculation of physical quantities) as the initial guess of the new task with all criteria are set as default.
