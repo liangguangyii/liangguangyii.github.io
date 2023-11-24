@@ -41,3 +41,4 @@ $$ \rm{d} B^{[l]} = \frac{1}{m} \sum_{m} \rm{d} Z^{[l]}$$
 $$ \rm{d} A^{[l - 1]} = W^{[l] \rm{T}} \cdot \rm{d} Z^{[l]}$$
 
 We use $\rm{d}$ to denote the partial derivative of the loss function with respect to the variable.
+
