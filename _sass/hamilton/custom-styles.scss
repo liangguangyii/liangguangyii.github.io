@@ -1,1 +1,8 @@
 // Placeholder to allow customizing styles.
+a {
+    color: #029acf; // 替换为您选择的颜色
+    &:hover {
+      color: #02779e; // 鼠标悬停时的颜色
+    }
+  }
+  
