@@ -92,10 +92,11 @@ li {
 /**
  * Links
  */
- a {
-  color: #029acf; 
+a {
+  text-decoration: underline;
+
   &:hover {
-    color: #02779e; 
+    text-decoration: none;
   }
 }
 
