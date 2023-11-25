@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 @import 
+  "hamilton/custom-styles",
   "hamilton/normalize",
   "hamilton/variables",
   "hamilton/override-variables",
   "hamilton/functions",
   "hamilton/base",
-  "hamilton/layout",
-  "hamilton/custom-styles"
+  "hamilton/layout"
 ;
