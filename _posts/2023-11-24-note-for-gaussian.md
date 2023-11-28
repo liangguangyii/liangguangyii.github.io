@@ -61,11 +61,13 @@ Here `Maximum Force` and `RMS Force` are the maximum and root-mean-square of the
 
 - if unconvergence happens in the inner loop, then it's the SCF problem, also mentioned in [Tian Lu's bolg](http://sobereva.com/61)
 
-    There are mainly three ways that are most used:
+    There are mainly four ways that are most used:
 
     - loose the convergence criteria, by setting `scf=conver=6`(`scf=conver=8` is the default value), together with `IOp(7/127=-99) IOp(8/117=-99)` to avoid the error of the SCF procedure.
 
     - set `scf=vshift=N`(for heavy atoms or metal) N is a value between 300 to 500, to boarden the interval between LUMO and HOMO, without changing the final result.
+
+    - set larger iteration cycles `scf=maxcyc=N`
 
     - use the old converged output filed as the inital guess of wave function, by setting the correct chk file path and `guess=read`.
 
