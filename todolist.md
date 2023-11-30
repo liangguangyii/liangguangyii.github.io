@@ -21,3 +21,7 @@ permalink: /todo/
 
 - [ ] Conduct some research on how to characterize which electrons in the atoms that make up the molecular composition participate in the formation of molecular orbitals and which ones remain in the inner layers.
     - [ ] Atoms in molecules, AIM theory
+
+- [ ] read papers about Pt Cd in Au13
+    - [ ] [Stoichiometric Formation of Open-Shell](https://pubs.acs.org/doi/10.1021/jacs.9b06254)
+    - [ ] [Synergistic Effects of Pt and Cd Codoping to Icosahedral Au13 Superatoms](https://pubs.acs.org/doi/10.1021/acs.jpcc.0c06765)
