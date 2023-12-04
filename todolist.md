@@ -26,3 +26,5 @@ permalink: /todo/
     - [ ] [Stoichiometric Formation of Open-Shell](https://pubs.acs.org/doi/10.1021/jacs.9b06254)
     - [ ] [Synergistic Effects of Pt and Cd Codoping to Icosahedral Au13 Superatoms](https://pubs.acs.org/doi/10.1021/acs.jpcc.0c06765)
     - [ ] [d10 - d10 in Pt](https://pubs.acs.org/doi/10.1021/ja00475a017)
+
+- [ ] Jahn−Teller effect, in book Physics and Chemistry of Small Clusters
