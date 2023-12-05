@@ -36,8 +36,11 @@ Here:
 And for backpropagation, the gradient of the $l$-th layer could be written as:
 
 $$ \rm{d} Z^{[l]} = \rm{d} A^{[l]} \times g'^{[l]}(Z^{[l]}) $$
+
 $$ \rm{d} W^{[l]} = \frac{1}{m} \rm{d} Z^{[l]} \cdot A^{[l-1] \rm{T}}$$
+
 $$ \rm{d} B^{[l]} = \frac{1}{m} \sum_{m} \rm{d} Z^{[l]}$$
+
 $$ \rm{d} A^{[l - 1]} = W^{[l] \rm{T}} \cdot \rm{d} Z^{[l]}$$
 
 We use $\rm{d}$ to denote the partial derivative of the loss function with respect to the variable.
