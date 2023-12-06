@@ -33,3 +33,7 @@ permalink: /todo/
     - [ ] [Impurities retain their magnetic moment](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.253401)
     - [ ] [Odd-even effects](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.155412)
     - [ ] [Theortical study of the magnetic properties of small transition metal clusters](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.67.094424)
+
+- [ ] Some paper about calculating embedding energy of cluster with impurity:
+    - [ ] [Nearly-free-electron gas in a silicon cage](https://journals.aps.org/prb/pdf/10.1103/PhysRevB.72.165413)
+    - [ ] Wigner-witmer spin conservation
