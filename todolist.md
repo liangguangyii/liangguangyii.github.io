@@ -37,3 +37,6 @@ permalink: /todo/
 - [ ] Some paper about calculating embedding energy of cluster with impurity:
     - [ ] [Nearly-free-electron gas in a silicon cage](https://journals.aps.org/prb/pdf/10.1103/PhysRevB.72.165413)
     - [ ] Wigner-witmer spin conservation
+
+- [ ] Some paper about Au-M+ alloy
+    - [ ] [Theoretical study of structural, electronic, and magnetic properties of AumM+ cluster](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.155412)
