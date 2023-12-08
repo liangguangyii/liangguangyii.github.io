@@ -1,7 +1,7 @@
 title: LIANG
 description: A man like girls🫡.
 author: LIANG Guangyi
-avatar: /logo.jpg
+avatar: /logo_new.jpg
 email: liangguangyi@mail.ustc.edu.cn
 plugins:
   - jekyll-seo-tag
@@ -35,7 +35,7 @@ exclude:
 twitter:
   username: Liang Guangyi
   card: summary
-logo: logo.jpg
+logo: logo_new.jpg
 social:
   name: Liang Guangyi
   links:
