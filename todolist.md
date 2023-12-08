@@ -30,7 +30,7 @@ permalink: /todo/
 - [ ] Jahn−Teller effect, in book Physics and Chemistry of Small Clusters, may connect with the geometric distortion to break the symmetry of the non-linear molecular with degenerate states.??
 
 - [ ] Read papers related with magnetic properties of metal cluster, especially for transition metal. It seems that some host metal atoms, like alkali metal, could stablize the magnetic moment of the transition metal impurities, to create magnetic moment even higher than the free atom.
-    - [ ] [Impurities retain their magnetic moment](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.253401)
+    - [x] [Impurities retain their magnetic moment](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.253401)
     - [ ] [Odd-even effects](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.155412)
     - [ ] [Theortical study of the magnetic properties of small transition metal clusters](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.67.094424)
 
@@ -40,3 +40,4 @@ permalink: /todo/
 
 - [ ] Some paper about Au-M+ alloy
     - [ ] [Theoretical study of structural, electronic, and magnetic properties of AumM+ cluster](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.155412)
+    - [ ] [Transition metal at Au12 cage](https://link.aps.org/doi/10.1103/PhysRevB.83.155404)
