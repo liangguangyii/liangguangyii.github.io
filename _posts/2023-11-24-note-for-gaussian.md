@@ -162,7 +162,15 @@ Here `Maximum Force` and `RMS Force` are the maximum and root-mean-square of the
 
     - set larger iteration cycles `scf=maxcyc=N`
 
-    - use the old converged output filed as the inital guess of wave function, by setting the correct chk file path and `guess=read`.
+    - use the old converged output filed as the inital guess of wave function, by setting the correct chk file path and `guess=read`, `geom=check`. **Remember the charge and spin multiplicity should be set**, i.e.
+    ```
+    %chk=path/to/old_checkpoint.chk
+    #p B3LYP/6-31G(d) SP Geom=Check Guess=Read
+
+    Title Section
+
+    0 1
+    ```
 
 **Notice:** the output from this modified is only the result of a corase calculation, especially for the modification on the convergence criteria. Calculation task with defauly sets is needed after the convergence of the initial guess.
 
