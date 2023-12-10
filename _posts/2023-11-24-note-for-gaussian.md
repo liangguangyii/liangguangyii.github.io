@@ -129,6 +129,8 @@ num is the index of atom in gjf file, `num=0` denotes all all atoms for the give
 atom 0
 ```
 
+**Tips:** Use IOp(3/24=1) to print the basis set information in the output file.
+
 ### All electron basis set
 
 Use `gen` keyword to let Gaussian read the custom basis from the card section.
@@ -255,3 +257,11 @@ Here `Maximum Force` and `RMS Force` are the maximum and root-mean-square of the
 **Notice:** the output from this modified is only the result of a corase calculation, especially for the modification on the convergence criteria. Calculation task with defauly sets is needed after the convergence of the initial guess.
 
 **Notice:** `scf=conver=6` and `IOp(7/127=-99) IOp(8/117=-99)` could only avoid the SCF error in the geometry optimization process, at the end of the calculation task, in the analysis of the physical inforamtion, SCF error is still raised. Then I suggest to use this "fault"(I mean, SCF done by only error in the calculation of physical quantities) as the initial guess of the new task with all criteria are set as default.
+
+## Fix the imaginary frequency in frequency calculation
+
+**Notice**
+
+IOp won't inherit to the new task, so opt and freq should be seperated if IOp is used.
+
+Use `opt=(tight,recalc=n)`(n=3-5) to enhance the accuracy of the geometry optimization.
