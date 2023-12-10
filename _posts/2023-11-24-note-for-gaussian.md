@@ -100,6 +100,86 @@ Alpha MO coefficients                      R   N=         900
 
 Which means the number of basis function is 30 = 1 + 4 + 4 + 6 + 1 + 1 + 3 + 1 + 1 + 3 + 1 + 1 + 3.
 
+## Customized basis set
+
+shell definition block:
+
+```
+IType  NGauss  Sc	Shell descriptor line: shell type, # primitive gaussians, and scale factor.
+α1  d1μ	Primitive gaussian specification: exponent and contraction coefficient.
+α2  d2μ	
+…	
+αN  dNμ	There are a total of NGauss primitive gaussian lines.
+```
+
+center definition block:
+
+```
+atom num1-num2
+```
+
+or
+```
+num1-num2
+```
+
+num is the index of atom in gjf file, `num=0` denotes all all atoms for the given elements.
+
+```
+atom 0
+```
+
+### All electron basis set
+
+Use `gen` keyword to let Gaussian read the custom basis from the card section.
+
+```
+# m062x/gen
+[blank line]
+test
+[blank line]
+0 1
+ C                 -0.00000000    0.00000000    0.00000000
+ H                 -0.00000000    0.00000000    1.09000000
+ H                 -0.00000000   -1.02766186   -0.36333333
+ H                 -0.88998127    0.51383093   -0.36333333
+ H                  0.88998127    0.51383093   -0.36333333
+[blank line]
+C 0   
+6-311G*
+****
+H 0   
+6-31G**
+****
+```
+
+### Pseudopotential + the corresponding pseudopotential basis sets
+
+Use `genecp` keyword to let Gaussian read the custom basis from the card section.
+
+There are two parts of pesudopotential basis set, one is the pesudopotential itself to replace the core electrons, the other is the basis set for the valence electrons.
+
+```
+# b3lyp/genecp
+[blank line]
+test
+[blank line]
+0 1
+coordinates
+[blank line]
+atom1 0
+basis set for atom1
+****
+atom2 0
+basis set for atom2
+****
+[blank line]
+ecp for atom1
+ecp for atom2
+[blank line]
+[blank line]
+```
+
 ## Fix the unconverged problems in geometry optimization tasks
 
 The iteration of the geometry optimization task contains two loops:
