@@ -41,3 +41,7 @@ permalink: /todo/
 - [ ] Some paper about Au-M+ alloy
     - [ ] [Theoretical study of structural, electronic, and magnetic properties of AumM+ cluster](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.155412)
     - [ ] [Transition metal at Au12 cage](https://link.aps.org/doi/10.1103/PhysRevB.83.155404)
+
+- [ ] Theory about Hyperpolarizability(polarizability)
+    - [ ] [SOS method](http://sobereva.com/232)
+    - [ ] [The relationship between SOS and two level model](http://sobereva.com/361) 
