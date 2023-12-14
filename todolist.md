@@ -46,3 +46,4 @@ permalink: /todo/
     - [ ] [SOS method](http://sobereva.com/232)
     - [ ] [The relationship between SOS and two level model](http://sobereva.com/361) 
     - [ ] [two/three level model practice](http://sobereva.com/512)
+    - [ ] how to choose the frequency of hyperpolarizability? use two level or three level, combine with the oscillator strength of excited states?
