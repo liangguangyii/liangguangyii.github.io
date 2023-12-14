@@ -45,3 +45,4 @@ permalink: /todo/
 - [ ] Theory about Hyperpolarizability(polarizability)
     - [ ] [SOS method](http://sobereva.com/232)
     - [ ] [The relationship between SOS and two level model](http://sobereva.com/361) 
+    - [ ] [two/three level model practice](http://sobereva.com/512)
