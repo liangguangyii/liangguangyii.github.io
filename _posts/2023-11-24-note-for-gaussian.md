@@ -265,3 +265,8 @@ Here `Maximum Force` and `RMS Force` are the maximum and root-mean-square of the
 IOp won't inherit to the new task, so opt and freq should be seperated if IOp is used.
 
 Use `opt=(tight,recalc=n)`(n=3-5) to enhance the accuracy of the geometry optimization.
+
+## Fix some errors in Utility Programs of Gaussian
+
+- [ ] Out-of-memory error in `formchk`:
+  `export GAUSS_MEMDEF=12GB`
