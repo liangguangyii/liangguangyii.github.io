@@ -270,3 +270,15 @@ Use `opt=(tight,recalc=n)`(n=3-5) to enhance the accuracy of the geometry optimi
 
 - [ ] Out-of-memory error in `formchk`:
   `export GAUSS_MEMDEF=12GB`
+
+## The optimazation of wave function
+
+### keywords `stable`
+
+`stable` is used to check the stability of the wave function, we could check it in the output file by searching `Stability analysis` string. More details are discussed in this [website](http://blog.molcalx.com.cn/2018/12/19/gaussian-wavefunction-stability.html).
+
+Furthermore, we could use `stable=opt` to optimize the wave function, which is used to fix the problem of the wave function.
+
+### Spin-Polarized state/Symmetry-Broken state
+
+Spin-Polarized state is the state with the broken spin symmetry, though it's the state with closed shell, the alpha and beta electrons are not equal, i.e. there is difference between the distribution of those two electrons. However, the default guess of Gaussian is the restricted closed shell wave function, which is often not good enough. Seen in [Tian Lu' Blog](http://sobereva.com/82), `stable=opt` is also used to fix the problem of the initial wave function.
