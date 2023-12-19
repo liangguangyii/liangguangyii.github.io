@@ -40,10 +40,13 @@ permalink: /todo/
 
 - [ ] Some paper about Au-M+ alloy
     - [ ] [Theoretical study of structural, electronic, and magnetic properties of AumM+ cluster](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.155412)
-    - [ ] [Transition metal at Au12 cage](https://link.aps.org/doi/10.1103/PhysRevB.83.155404)
+    - [x] [Transition metal at Au12 cage](https://link.aps.org/doi/10.1103/PhysRevB.83.155404)
 
 - [ ] Theory about Hyperpolarizability(polarizability)
     - [ ] [SOS method](http://sobereva.com/232)
     - [ ] [The relationship between SOS and two level model](http://sobereva.com/361) 
     - [ ] [two/three level model practice](http://sobereva.com/512)
     - [ ] how to choose the frequency of hyperpolarizability? use two level or three level, combine with the oscillator strength of excited states?
+
+- [ ] Non linear response
+    - [ ] [molecular switch under electric field](http://sobereva.com/630), [optical properties of C18](http://sobereva.com/640)
