@@ -47,6 +47,7 @@ permalink: /todo/
     - [ ] [The relationship between SOS and two level model](http://sobereva.com/361) 
     - [ ] [two/three level model practice](http://sobereva.com/512)
     - [ ] how to choose the frequency of hyperpolarizability? use two level or three level, combine with the oscillator strength of excited states?
+    - [x] [Bond additive model and interacting segment model(ISM)](https://link.aps.org/doi/10.1103/PhysRevA.16.1179)
 
 - [ ] Non linear response
     - [ ] [molecular switch under electric field](http://sobereva.com/630), [optical properties of C18](http://sobereva.com/640)
