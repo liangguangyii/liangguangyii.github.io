@@ -52,3 +52,4 @@ permalink: /todo/
 - [ ] Non linear response
     - [ ] [molecular switch under electric field](http://sobereva.com/630), [optical properties of C18](http://sobereva.com/640)
     - [ ] [the density of polarizability(hyperpolarizability)](http://sobereva.com/305)
+    - [ ] [change the non linear properties of cluster by adding "super alkali metals"](https://doi.org/10.1002/jcc.24796)
