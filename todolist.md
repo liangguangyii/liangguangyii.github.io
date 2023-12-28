@@ -53,3 +53,7 @@ permalink: /todo/
     - [ ] [molecular switch under electric field](http://sobereva.com/630), [optical properties of C18](http://sobereva.com/640)
     - [ ] [the density of polarizability(hyperpolarizability)](http://sobereva.com/305)
     - [ ] [change the non linear properties of cluster by adding "super alkali metals"](https://doi.org/10.1002/jcc.24796)
+
+- [ ] sdd Direc-Hatree-Fock basis ecp:
+    - [ ] [Energy-consistent pseudopotentials for group 11 and 12 atoms: adjustment to multi-configuration Dirac–Hartree–Fock data](https://www.sciencedirect.com/science/article/pii/S0301010404005658)
+    - [ ] [Systematically convergent basis sets for transition metals. II. Pseudopotential-based correlation consistent basis sets for the group 11 (Cu, Ag, Au) and 12 (Zn, Cd, Hg) elements](https://link.springer.com/article/10.1007/s00214-005-0681-9)
