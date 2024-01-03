@@ -9,6 +9,8 @@ math: true
 
 ## Auxiliary Basis Set
 
+In the Chap9.5 of the manual, it says:
+
 NOTES:
 • The RI-J approximation requires an \auxiliary basis set" in addition to a normal orbital basis set. For the Karlsruhe basis sets there is the universal auxiliary basis set of Weigend that is called with the name def2/J (all-electron up to Kr). When scalar relativistic Hamiltonians are used (DKH or ZORA) along with all-electron basis sets, then a general-purpose auxiliary basis set is the SARC/J that covers most of the periodic table. Other choices are documented in sections 6.3 and 9.5.
 
