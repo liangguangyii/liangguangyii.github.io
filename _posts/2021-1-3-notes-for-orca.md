@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Notes for Jupyter
-tags: [Python, "Computer Science"]
+title: Notes for ORCA
+tags: [PRCA, DFT]
 categories: notes
 toc: true
 math: true
@@ -17,7 +17,7 @@ NOTES:
  - [ ] For pure" functionals the use of RI-J with the def2/J auxiliary basis set is the default.
 
 
-The basis set is specified in the block `%BASIS`. Note that there are three distinguished slots for auxiliary basis sets (AuxJ, AuxC and AuxJK) to be used with RI approximation. Which auxiliary basis slot is used in the actual program depends on the context. The AuxJ and AuxJK slots are used in the context of Fock matrix construction, whereas the AuxC slot is used for all other integral generation steps e.g. in post-Hartree Fock methods. Assigning the auxiliary basis with the simple input, takes care of the individual slots. However, in specific cases they must be set explicitly in the block input. For example, a \/JK" basis may be assigned to AuxJ in this way
+The basis set is specified in the block `%BASIS`. Note that there are three distinguished slots for auxiliary basis sets (AuxJ, AuxC and AuxJK) to be used with RI approximation. Which auxiliary basis slot is used in the actual program depends on the context. The AuxJ and AuxJK slots are used in the context of Fock matrix construction, whereas the AuxC slot is used for all other integral generation steps e.g. in post-Hartree Fock methods. Assigning the auxiliary basis with the simple input, takes care of the individual slots. However, in specific cases they must be set explicitly in the block input. For example, a /JK" basis may be assigned to AuxJ in this way
 
 ## Using the calculation results for initial guess
 
