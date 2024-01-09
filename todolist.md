@@ -50,12 +50,19 @@ permalink: /todo/
     - [ ] how to choose the frequency of hyperpolarizability? use two level or three level, combine with the oscillator strength of excited states?
     - [x] [Bond additive model and interacting segment model(ISM)](https://link.aps.org/doi/10.1103/PhysRevA.16.1179)
 
-- [ ] Non linear response
+- [ ] Non linear response, for electric filed
     - [ ] [molecular switch under electric field](http://sobereva.com/630), [optical properties of C18](http://sobereva.com/640)
     - [ ] [the density of polarizability(hyperpolarizability)](http://sobereva.com/305)
     - [ ] [change the non linear properties of cluster by adding "super alkali metals"](https://doi.org/10.1002/jcc.24796)
     - [ ] [NLO Calculator and Multiwfn](http://bbs.keinsci.com/thread-1605-1-1.html)
     - [ ] [Benchmark about different basis sets for SOS method](http://bbs.keinsci.com/forum.php?mod=viewthread&tid=1678&highlight=SOS)
+
+- [ ] Magnetic respopnse 
+    - [ ] [review and introduction about the methods used in magnetic response](http://sobereva.com/176)
+    - [ ] [NICS_ZZ, using the ghost atoms to calculate the specific position](http://sobereva.com/261)
+    - [ ] [GIMIC to calculate and analyse the magnetic induced current](http://sobereva.com/155), [the way to use the software GIMIC 2.0](http://sobereva.com/491)
+    - [ ] [Software AICD](http://sobereva.com/147)
+    - [ ] [And how to derive Huckle rule](https://zhuanlan.zhihu.com/p/45465744)
 
 - [ ] sdd Direc-Hatree-Fock basis ecp:
     - [ ] [Energy-consistent pseudopotentials for group 11 and 12 atoms: adjustment to multi-configuration Dirac–Hartree–Fock data](https://www.sciencedirect.com/science/article/pii/S0301010404005658)
