@@ -60,6 +60,7 @@ permalink: /todo/
 - [ ] Magnetic respopnse 
     - [ ] [review and introduction about the methods used in magnetic response](http://sobereva.com/176)
     - [ ] [NICS_ZZ, using the ghost atoms to calculate the specific position](http://sobereva.com/261)
+        - [ ] USE THE NICS(1)_ZZ -- 1 Amgstrom from the center of ring(mass center or ELF center) along the normal direction of the ring plane, by using the ghost atoms.
         - [ ] [To calculate the contribution of each orbits to NICS](http://sobereva.com/670), [Sepearate the NICS to the contribution of sigma and pi orbits](http://sobereva.com/145)
     - [ ] [GIMIC to calculate and analyse the magnetic induced current](http://sobereva.com/155), [the way to use the software GIMIC 2.0](http://sobereva.com/491)
     - [ ] [Software AICD](http://sobereva.com/147)
