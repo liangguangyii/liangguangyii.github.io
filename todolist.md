@@ -6,7 +6,7 @@ permalink: /todo/
 
 - [ ] Watching vedio about PINN
 - [ ] Learning about the pertubation theroy for Many-Body problem
-- [ ] Prepare for QE
+- [x] Prepare for QE
 - [x] Finish the draft of the paper
     - [ ] NTO or electron-hole?
 
