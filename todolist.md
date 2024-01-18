@@ -69,3 +69,12 @@ permalink: /todo/
 - [ ] sdd Direc-Hatree-Fock basis ecp:
     - [ ] [Energy-consistent pseudopotentials for group 11 and 12 atoms: adjustment to multi-configuration Dirac–Hartree–Fock data](https://www.sciencedirect.com/science/article/pii/S0301010404005658)
     - [ ] [Systematically convergent basis sets for transition metals. II. Pseudopotential-based correlation consistent basis sets for the group 11 (Cu, Ag, Au) and 12 (Zn, Cd, Hg) elements](https://link.springer.com/article/10.1007/s00214-005-0681-9)
+
+- [ ] The description of weak interaction 
+    - [ ] [BSSE to correct the binding energy between two fragments in the complex, and how to use gaussian to calculate the BSSE between different fragments](http://sobereva.com/46)
+    - [ ] [The introduction of RDG, and using sing($\lambda_{2}$) to describe the type of the interaction](http://sobereva.com/68)
+        - [ ] The relationship between steric effect and attraction efects.
+        - [ ] Set the cut-off of high value of density to distinguish the RDG in weak interaction area and chemical bond area.
+        - [ ] [Q&A of RDG](http://sobereva.com/291)
+    - [ ] [The introduction of IRI](http://sobereva.com/598)
+    - [ ] [IGM](http://sobereva.com/407),[IGMH](http://sobereva.com/621)
