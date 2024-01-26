@@ -78,3 +78,6 @@ permalink: /todo/
         - [ ] [Q&A of RDG](http://sobereva.com/291)
     - [ ] [The introduction of IRI](http://sobereva.com/598)
     - [ ] [IGM](http://sobereva.com/407),[IGMH](http://sobereva.com/621)
+
+- [ ] [Visualize molecular orbitals with phase factor](https://pubs.acs.org/doi/10.1021/acs.jpca.9b01134)
+    - [ ] In general, the electron wave function is complex function, in SO coupling or in external magnetic field, or in Dirac equation. 
