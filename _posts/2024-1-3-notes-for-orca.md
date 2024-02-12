@@ -2,7 +2,7 @@
 layout: post
 title: Notes for ORCA
 tags: [PRCA, DFT]
-categories: notes
+categories: DFT
 toc: true
 math: true
 ---
@@ -25,6 +25,6 @@ More details see in [Tian Lu's blog](http://sobereva.com/517), he's a fucking ka
 
 There are several points that should be notices:
 
-    - [ ] We should using `int=NoBasisTransform` in gjf document to avoid the situation that gaussian delete the  repeated basis functions.
-    - [ ] Using `IOp(3/32=2)` to keep the linear-dependent basis function.
-    - [ ] And be careful, the wave function is in the standard oreientation.
+- [ ] We should using `int=NoBasisTransform` in gjf document to avoid the situation that gaussian delete the  repeated basis functions.
+- [ ] Using `IOp(3/32=2)` to keep the linear-dependent basis function.
+- [ ] And be careful, the wave function is in the standard oreientation.

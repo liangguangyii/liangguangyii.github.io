@@ -2,7 +2,7 @@
 layout: post
 title: Notes for hanhai HPC
 tags: [HPC, "Computer Science"]
-categories: notes
+categories: HPC
 toc: true
 math: true
 ---

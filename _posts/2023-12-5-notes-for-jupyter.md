@@ -2,7 +2,7 @@
 layout: post
 title: Notes for Jupyter
 tags: [Python, "Computer Science"]
-categories: notes
+categories: code
 toc: true
 math: true
 ---

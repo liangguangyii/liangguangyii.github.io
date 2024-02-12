@@ -79,6 +79,8 @@ permalink: /todo/
     - [ ] [The introduction of IRI](http://sobereva.com/598)
     - [ ] [IGM](http://sobereva.com/407),[IGMH](http://sobereva.com/621)
 
-- [ ] [Visualize molecular orbitals with phase factor](https://pubs.acs.org/doi/10.1021/acs.jpca.9b01134)
-    - [ ] In general, the electron wave function is complex function, in SO coupling or in external magnetic field, or in Dirac equation.
-    - [ ] [Format of cube document](http://sobereva.com/483) 
+- [x] [Visualize molecular orbitals with phase factor](https://pubs.acs.org/doi/10.1021/acs.jpca.9b01134)
+    - [x] In general, the electron wave function is complex function, in SO coupling or in external magnetic field, or in Dirac equation.
+    - [x] [Format of cube document](http://sobereva.com/483) 
+
+- [ ] 3D aromatic requirement: $2n^2$, the reason why I keep the electron number of superatoms unchanged.
