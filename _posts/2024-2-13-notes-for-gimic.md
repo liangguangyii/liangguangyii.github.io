@@ -59,4 +59,4 @@ For closed shell, fchk files are needed, then `./Gaussian2gimic.py --input=test.
 
 For open shell, log files are needed, so extra keyword `gfprint` should be added in the input file, to print the basis set information, then `./Gaussian2gimic.py --input=test.log`.
 
-And the calculation is proceeded in a cubic box, so the initial orientation of the molecule should be considered, by using `nosymm` keword.
+And the calculation is proceeded in a cubic box, so the initial orientation of the molecule should be considered, by using `nosymm` keyword.
