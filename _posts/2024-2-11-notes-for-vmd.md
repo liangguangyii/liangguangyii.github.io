@@ -71,3 +71,5 @@ proc mycolor_scale {} {
   display update on
 }
 ```
+
+It will be activated by using the colormap command such as `mol scaleminmax molID repID min max` once again.
