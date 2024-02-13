@@ -25,7 +25,7 @@ subcommands:
 - `modstyle` rep_number molecule_number rep_style: Change the current rendering method (style) for the given representation in the specified molecule.
 - `modselect` rep_number molecule_number select_method: Change the current selection for the given representation in the specified molecule.
 
-- `scaleminmax` molecule_number rep_number [min max | auto]: Get/set the color scale range for this rep. Normally the color scale is automatically scaled to the minimum and maximum of the corresponding range of data. This command overrides the autoscaled values with the values you specify. Omit the min and max arguments to get the current values. Use ``auto" instead of a min and max to rescale the color scale to the maximum range again.
+- `scaleminmax` molecule_number rep_number [min max / auto]: Get/set the color scale range for this rep. Normally the color scale is automatically scaled to the minimum and maximum of the corresponding range of data. This command overrides the autoscaled values with the values you specify. Omit the min and max arguments to get the current values. Use ``auto" instead of a min and max to rescale the color scale to the maximum range again.
 
 ## Custom colormap
 
