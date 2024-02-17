@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Notes for vmd
-tags: [vmd, "Computer Science"]
+tags: [vmd, "Visualisation"]
 categories: code
 toc: true
 math: true
 ---
 ## molecule_number and rep_number
-molecule_number is the index of the molecule in the molecule list, and it is not reusued after the molecule is deleted. **Thus it's truely inconvenient when using command line, and we could use `top` to represent the molID in the top of the current molecule list.**
+molecule_number is the index of the molecule in the molecule list, and it is not reusued after the molecule is deleted. **Thus it's truely inconvenient when using command line, and we could use `top` to represent the molID in the bottom of the current molecule list.**
 
 rep_number is the index of the representation in the representation list, with respect to the molecule_number. 
 
@@ -26,6 +26,14 @@ subcommands:
 - `modselect` rep_number molecule_number select_method: Change the current selection for the given representation in the specified molecule.
 
 - `scaleminmax` molecule_number rep_number [min max / auto]: Get/set the color scale range for this rep. Normally the color scale is automatically scaled to the minimum and maximum of the corresponding range of data. This command overrides the autoscaled values with the values you specify. Omit the min and max arguments to get the current values. Use ``auto" instead of a min and max to rescale the color scale to the maximum range again.
+
+code to delete all molID in vmd:
+```tcl
+foreach i [molinfo list] {
+mol delete $i
+}
+```
+
 
 ## Custom colormap
 
