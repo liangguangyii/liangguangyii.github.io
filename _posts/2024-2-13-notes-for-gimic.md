@@ -137,6 +137,6 @@ Advanced {
 }
 ```
 
-![fix the plane grid](figure/gimic_plane1.png)
+<img src="figure/gimic_plane1.png" alt="fix the plane grid" />
 
-![parameters of plane](figure/benzene-plane-documentation.jpg)
+<img src="figure/benzene-plane-documentation.jpg" alt="parameters of plane" />
