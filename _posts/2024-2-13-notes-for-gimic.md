@@ -19,18 +19,17 @@ If executable file setup runs successfully, then `build` directory will be creat
 
 And there are some fucking bugs in the python part of source code, in `src/pygimic`, for the `connector.pxd` and `connector.pyx` (the cpython code).
 
-In my point of view, I think maybe it's caused by the same name of the pxd and pyx files, because `connector.pxy` has imported `GimicConnector` function in `connector.pxd`, and `NotAvailable` in `gimic_exceptions.py`. For the former one, I delete the import line in pyx, and for the latter, I write the `NotAvailable` in cython format in pxy:
+The reason has found, which is the duplicate definition of function `GimicConnector`. It has already defined in `connector.pyx`, and decalared in `connector.pxd`, so it's unnecessary to `cimport` in once again from pxd doc. 
 
 ```python
-cdef class NotAvailable(Exception):
-    cdef public str backend
+# Generic GIMIC interface
+#
+# Jonas Juselius <jonas.juselius@uit.no> 2012
+#
 
-    def __cinit__(self, value):
-        self.backend = 'GIMIC'
-        self.value = value
-
-    def __str__(self):
-        return f"Requested method is not available for chosen backend: {self.backend}.{self.value}"
+from pygimic.gimic_exceptions import NotAvailable
+#NO NEEDED!
+#from connector cimport GimicConnector
 
 cdef class GimicConnector:
     cpdef jvector(self, r):
@@ -137,6 +136,6 @@ Advanced {
 }
 ```
 
-<img src="figure/gimic_plane1.png" alt="fix the plane grid" />
+<img src="./figure/gimic_plane1.png" alt="fix the plane grid" />
 
-<img src="figure/benzene-plane-documentation.jpg" alt="parameters of plane" />
+<img src="./figure/benzene-plane-documentation.jpg" alt="parameters of plane" />
