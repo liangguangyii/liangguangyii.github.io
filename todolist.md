@@ -88,3 +88,5 @@ permalink: /todo/
 - [x] Au9Pt4+ is anti-armoticity, though V@Au9Pt4+ is strongly aromatic. Do calculate their binding energy in PBE0/sdd.
 
 - [ ] Do reprint the showcub.vmd, because it doesn't show the original molecule, only diatropic and paratropic current are shown.
+
+- [ ] There's sharp corners in ELF of AuPt, compared with doped structure, may be the reason that why armaticity increases. Anylse in weak interaction.
