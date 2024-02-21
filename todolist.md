@@ -85,4 +85,6 @@ permalink: /todo/
 
 - [ ] 3D aromatic requirement: $2n^2$, the reason why I keep the electron number of superatoms unchanged.
 
-- [ ] Au9Pt4+ is anti-armoticity, though V@Au9Pt4+ is strongly aromatic. Do calculate their binding energy in PBE0/sdd.
+- [x] Au9Pt4+ is anti-armoticity, though V@Au9Pt4+ is strongly aromatic. Do calculate their binding energy in PBE0/sdd.
+
+- [ ] Do reprint the showcub.vmd, because it doesn't show the original molecule, only diatropic and paratropic current are shown.
