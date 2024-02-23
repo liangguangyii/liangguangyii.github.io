@@ -2,14 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://en.ustc.edu.cn/'>USTC</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://en.ustc.edu.cn/'>USTC</a>. Goblin Hillocks(Should you require contact, please convey messages to the Goblin Shaman of Goblin Hillocks). An Authentic Highland Goblin.
+
 
 profile:
   align: right
   image: liangguangyi.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><Portrait of a Mountain Goblin</p>
+    <p>Highland Goblin</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
