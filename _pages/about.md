@@ -9,7 +9,7 @@ profile:
   image: liangguangyi.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>liangguangyi@mail.ustc.edu.cn</p>
+    <p><strong>Portrait of a Mountain Goblin</strong></p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
