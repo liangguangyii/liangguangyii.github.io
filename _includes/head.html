@@ -1,48 +1,42 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Metadata, OpenGraph and Schema.org -->
+    {% include metadata.html %}
 
-{% seo %}
+    <!-- Bootstrap & MDB -->
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
+    <!-- <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
 
-{% feed_meta %}
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ site.bootstrap-table.version }}/dist/bootstrap-table.min.css">
 
-{% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-{% endif %}
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
-{% if page.math %}
-  {% include mathjax.html %}
-{% endif %}
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" media="" id="highlight_theme_light" />
 
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans|Roboto|Roboto%20Slab|Inconsolata|Dancing%20Script|Noto%20Sans%20SC|Noto%20Sans%20TC|Noto%20Serif%20SC|Noto%20Serif%20TC|Ma%20Shan%20Zheng">
+    {% if page.toc and page.toc.sidebar %}
+    <!-- Sidebar Table of Contents -->
+    <link href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet" />
+    {% endif %}
 
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/skin.css' | relative_url }}">
+    {% if page.tikzjax %}
+    <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+    <script defer src="https://tikzjax.com/v1/tikzjax.js"></script>
+    {% endif %}
 
-<!-- Begin selecting skin -->
-{% unless site.skin %}
-  <script>
-    const hour = (new Date()).getHours();
-    let filename = "";
-    if (hour >= 5 && hour < 7) {
-      filename = "{{ '/assets/css/skin-sunrise.css' | relative_url }}";
-    } else if (hour >= 7 && hour < 17) {
-      filename = "{{ '/assets/css/skin-daylight.css' | relative_url }}";
-    } else if (hour >= 17 && hour < 19) {
-      filename = "{{ '/assets/css/skin-sunset.css' | relative_url }}";
-    } else {
-      filename = "{{ '/assets/css/skin-midnight.css' | relative_url }}";
-    }
-    const elem = document.createElement("link");
-    elem.setAttribute("rel", "stylesheet");
-    elem.setAttribute("type", "text/css");
-    elem.setAttribute("href", filename);
-    document.getElementsByTagName("head")[0].appendChild(elem);
-  </script>
-{% endunless %}
-<!-- End selecting skin -->
+    <!-- Styles -->
+    {% if site.icon.size <= 4 %}
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
+    {% elsif site.icon != blank %}
+    <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}"/>
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-<script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
-
-{% include custom-head.html %}
+    <!-- Dark Mode -->
+    {% if site.enable_darkmode %}
+    <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}" media="none" id="highlight_theme_dark" />
+    <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+    {% endif %}
