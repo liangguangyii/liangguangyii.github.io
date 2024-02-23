@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://en.ustc.edu.cn/'>USTC</a>. Goblin Hillocks(Should you require contact, please convey messages to the Goblin Shaman of Goblin Hillocks). An Authentic Highland Goblin.
+subtitle: <a href='https://en.ustc.edu.cn/'>USTC</a>. Goblin Hillocks. An Authentic Highland Goblin.
 
 
 profile:
@@ -10,7 +10,7 @@ profile:
   image: liangguangyi.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Highland Goblin</p>
+    <p> An Authentic Highland Goblin</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
