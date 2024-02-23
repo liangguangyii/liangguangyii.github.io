@@ -6,6 +6,7 @@ tags: [gimic, DFT]
 categories: DFT
 giscus_comments: true
 related_posts: true
+thumbnail: assets/img/gimic_plane1.png
 toc:
   sidebar: left
 ---
@@ -141,9 +142,12 @@ Advanced {
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="_post/figure/gimic_plane1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/gimic_plane1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="_post/figure/benzene-plane-documentation.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/benzene-plane-documentation.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
+</div>
+<div class="caption">
+    The plane grids under parameters.
 </div>
