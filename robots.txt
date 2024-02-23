@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://liangguangyii.github.io/sitemap.xml
