@@ -92,6 +92,9 @@ nav_order: 1
 
 - [ ] Do reprint the showcub.vmd, because it doesn't show the original molecule, only diatropic and paratropic current are shown.
 
-- [ ] There's sharp corners in ELF of AuPt, compared with doped structure, may be the reason that why armaticity increases. Anylse in weak interaction.
+- [ ] There's sharp corners in ELF of AuPt, compared with doped structure, may be the reason that why armaticity increases. Analyse in weak interaction.
+    - [ ] Analyse in AIM -> seperate the transition metal in single charged atom, then calculate its induced current?
+
+- [ ] Biphenylaromaticity, see in [Tian Lu's blog](http://sobereva.com/696).
 
 
