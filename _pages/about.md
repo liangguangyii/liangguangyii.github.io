@@ -21,16 +21,16 @@ social: true  # includes social icons at the bottom of the page
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Press+Start+2P&size=30&pause=10&color=F7AF85&center=true&vCenter=true&random=false&width=450&height=60&lines=I+HATE+FORTRAN;I+LOVE+FORTRAN)](https://git.io/typing-svg)
 
 LOVE: Fortran I Love you 😍 Fortran I hate you 😡
+
 HATE: Fortran I hate you 😡 Fortran I Love you 😍
+
 LOVE: Fortran I Love you 😍 Fortran I hate you 😡
+
 HATE: Fortran I hate you 😡 Fortran I Love you 😍
+
 LOVE: Fortran I Love you 😍 Fortran I hate you 😡
+
 HATE: Fortran I hate you 😡 Fortran I Love you 😍
-LOVE: Fortran I Love you 😍 Fortran I hate you 😡
-HATE: Fortran I hate you 😡 Fortran I Love you 😍
-LOVE: Fortran I Love you 😍 Fortran I hate you 😡
-HATE: Fortran I hate you 😡 Fortran I Love you 😍
-LOVE: Fortran I Love you 😍 Fortran I hate you 😡
-HATE: Fortran I hate you 😡 Fortran I Love you 😍
+
 
 
