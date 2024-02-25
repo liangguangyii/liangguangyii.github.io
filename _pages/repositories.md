@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Welcome to my repositories page. A fucking fortran slaver(used to be fortran slayer)'s github repositories.
+description: Welcome to my repositories page. A fucking pathetic fortran slaver (used to be a fortran slayer)'s github repositories.
 nav: true
 nav_order: 4
 ---
