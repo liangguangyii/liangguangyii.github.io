@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Welcome to my repositories page. A fucking pathetic fortran slaver (used to be a fortran slayer)'s github repositories.
+description: <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=30&pause=10&color=F7AF85&random=false&width=500&height=60&lines=A+Fortran+Slayer;A+Fortran+Slaver" alt="Typing SVG" /></a>
 nav: true
 nav_order: 4
 ---
