@@ -86,7 +86,7 @@ nav_order: 1
     - [x] In general, the electron wave function is complex function, in SO coupling or in external magnetic field, or in Dirac equation.
     - [x] [Format of cube document](http://sobereva.com/483) 
 
-- [ ] 3D aromatic requirement: $2n^2$, the reason why I keep the electron number of superatoms unchanged.
+- [x] 3D aromatic requirement: $$2n^2$$, the reason why I keep the electron number of superatoms unchanged.
 
 - [x] Au9Pt4+ is anti-armoticity, though V@Au9Pt4+ is strongly aromatic. Do calculate their binding energy in PBE0/sdd.
 
