@@ -97,4 +97,7 @@ nav_order: 1
 
 - [ ] Biphenylaromaticity, see in [Tian Lu's blog](http://sobereva.com/696).
 
+- [ ] Persistent current in nano ring, diatropic and paratropic
+    - [ ] [Aromatic and antiaromatic ring currents in a molecular nanoring](https://www.nature.com/articles/nature20798)
+    - [ ] [Persistent current in metal cluster](https://www.science.org/doi/full/10.1126/science.1178139)
 
