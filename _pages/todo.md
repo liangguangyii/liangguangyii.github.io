@@ -2,7 +2,7 @@
 layout: page
 permalink: /todolist/
 title: todo list
-description: Goblin's todo list.
+description: Goblin's checklist.
 nav: true
 nav_order: 1
 ---
