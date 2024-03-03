@@ -19,12 +19,15 @@ Persistent current in 1D ring has been a hot topic during last centery. Especial
 
 The 1D ring is shown as follows, with the radius $$R$$ and circumference $$L$$.
 
-<script type="text/tikz">
-\begin{tikzpicture}
-    \draw (0,0) circle(1.5);
-    \draw [->] (0,0) -- (1.5,0); 
-\end{tikzpicture}
-</script>
+<div style="text-align:center">
+    <script type="text/tikz">
+    \begin{tikzpicture}
+        \draw (0,0) circle(2.0);
+        \draw [->] (0,0) -- (1.0,1.732);
+        \node at (0.5,0.4) {$R$};
+    \end{tikzpicture}
+    </script>
+</div>
 
 The turn to the cylindrical coordinate system, for which the gradient are given as:
 
@@ -35,3 +38,6 @@ And for 1D ring, $$r$$ is a constant $$r = R$$, then
 $$\nabla = \frac{1}{R} \frac{ \partial}{ \partial \theta} \rm{d} \vec{ \theta} = \frac{ \partial}{ \partial u} \rm{d} \vec{u}$$
 
 where $$ u = 2 \pi r$$.
+
+The Hamiltonian of a single electron under electromagnetic field is given as:
+
