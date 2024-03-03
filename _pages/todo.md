@@ -101,3 +101,7 @@ nav_order: 1
     - [ ] [Aromatic and antiaromatic ring currents in a molecular nanoring](https://www.nature.com/articles/nature20798)
     - [ ] [Persistent current in metal cluster](https://www.science.org/doi/full/10.1126/science.1178139), and DO read pdf1112.3395!
     - [ ] [Direction of persistent current as a function of electron number](Period and amplitude halving in mesoscopic rings with spin)
+
+- [ ] [dkh2 int](http://sobereva.com/581), could it still be used in gimic method？
+
+- [ ] Show the electron distribution under external electric field.
