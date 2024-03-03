@@ -54,8 +54,9 @@ $$ \iint \rm{d} S \cdot \vec{B} = \iint \rm{d} S \cdot ( \nabla \times \vec{A} )
 
 Which means $$ \phi = |\vec{A}| \cdot L$$. Then rewrite the Hamiltonian:
 
-$$ H = \frac{1}{2m}(-i \hbar \frac{1}{R} \frac{ \partial}{ \partial u} + e \frac{ \phi}{ L})^{2} = \frac{h^2}{2mL^2} ( i \frac{ \partial}{ \partial u} + \frac{ \phi}{ {\phi}_{0}}) $$
+$$ H = \frac{1}{2m}(-i \hbar \frac{ \partial}{ \partial u} + e \frac{ \phi}{ L})^{2} = \frac{h^2}{2mL^2} ( - i R \frac{ \partial}{ \partial u} + \frac{ \phi}{ {\phi}_{0}})^2 $$
 
-And $$ \phi_{0} = \frac{h}{e}$$ is the magnetic flux quantum. The boundary condition in this gauge is :
+And $$ \phi_{0} = \frac{h}{e}$$ is the magnetic flux quantum. The boundary condition in this gauge is $$ \psi(u + L) = \psi(u) $$， assume $$ \psi(u) \propto e^{i X u} $$, then $$ XL = 2 n \pi, \ n \in Z $$. Then the wave function and the corresponding energy is:
 
-$$  $$
+$$ \psi(u) = \frac{1}{ \sqrt{L} } \exp(i \frac{2n \pi u}{L}), \ { \epsilon}_{n} = \frac{h^2}{2mL^2} ( \frac{1}{L} 2n \pi R + \frac{\phi}{\phi_0})^2 = \frac{h^2}{2mL^2} ( n + \frac{\phi}{\phi_0})^2  $$
+
