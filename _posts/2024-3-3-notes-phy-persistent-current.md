@@ -6,6 +6,7 @@ tags: ["Quantum mechanics"]
 categories: Physics
 giscus_comments: true
 related_posts: true
+tikzjax: true
 toc:
   sidebar: left
 ---
@@ -26,4 +27,11 @@ The 1D ring is shown as follows, with the radius $$R$$ and circumference $$L$$.
 </script>
 
 The turn to the cylindrical coordinate system, for which the gradient are given as:
+
 $$ \nabla = \frac{1}{r} \frac{ \partial}{ \partial \theta} \rm{d} \vec{ \theta} + \frac{ \partial }{ \partial r} \rm{d} \vec{r} + \frac{ \partial}{ \partial z} \rm{d} \vec{z} $$
+
+And for 1D ring, $$r$$ is a constant $$r = R$$, then 
+
+$$\nabla = \frac{1}{R} \frac{ \partial}{ \partial \theta} \rm{d} \vec{ \theta} = \frac{ \partial}{ \partial u} \rm{d} \vec{u}$$
+
+where $$ u = 2 \pi r$$.
