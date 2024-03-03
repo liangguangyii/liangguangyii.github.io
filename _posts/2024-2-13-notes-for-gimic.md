@@ -56,7 +56,7 @@ if __name__ == '__main__':
 
 ### Gaussian output file
 
-There are two cases: closed shell and open shell. Both of them should add the keyword `Int=NoBasisTransform IOp(10/33=2)` in NMR(GIAO) calculation, for the information transformation from different software (IOp(10/33=2)  to print the perturbed density matrices in the output file).
+There are two cases: closed shell and open shell. Both of them should add the keyword `pop=full Int=NoBasisTransform IOp(10/33=2)` in NMR(GIAO) calculation, for the information transformation from different software (IOp(10/33=2)  to print the perturbed density matrices in the output file).
 
 And two files named `Gaussian2gimic.py` and `BasisSet.py` in `gimic/tools/g092gimic` should be used to generated `XDENS` and `MOL`.
 
@@ -110,7 +110,7 @@ Generate grids perpendicularly to the `bond`/`line`, then fix its orientation, b
 In integral calculation, `bond` in `Grid` function is used to generate the plane grid. [The ’bond’ type grids define a plane through a bond, or any other defined vector. The plane is orthogonal to the vector defining the bond.](https://github.com/qmcurrents/gimic/blob/master/doc/grids.rst) To fix the orientation of the plane(or it will rotate along the bond), `fixpoint`/`fixcoord` is needed, the line of rectangle should be parallel to the projection of the vector connecting rotation axis of plane and fixpoint onto the plane.
 
 Figure following shows the plane grids under parameters:
-
+v
 ```
 calc=integral          # cdens, integral
 basis="../MOL"
