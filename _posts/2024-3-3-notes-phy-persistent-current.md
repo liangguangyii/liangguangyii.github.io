@@ -91,6 +91,21 @@ And the wave function in the new gauge is $$ \psi'(u) = e^{ - 2 \pi i \frac{ \La
 
 $$ \psi'(u+L) = e^{ - 2 \pi i \frac{ \Lambda(r + L)}{ \phi_0}} \psi(u) = e^{ - 2 \pi i \frac{ \Lambda(r + L) - \Lambda(r)}{ \phi_0}} \psi(u) = \exp(2 \pi i \frac{\phi}{\phi_0}) \psi'(u) $$
 
-With Hamiltonian $$ H' = \frac{h^2}{2mL^2} (-iR \frac{\partial }{ \partial u })^2 $$
+With Hamiltonian $$ H' = \frac{h^2}{2mL^2} (-iR \frac{\partial }{ \partial u })^2 $$.
+
+
+## Persistent current
+
+The expectation value of current is given as:
+
+$$ \vec{j} = \rm{Re} ( \psi^* \vec{v} \psi ), \ \vec{v} = - \frac{1}{m} (\vec{p} + e \vec{A}) $$
+
+Because $$ H = \frac{1}{2} m v^2, \ \frac{\partial}{\partial \phi} H = - \frac{e}{L} v $$, then $$ j_{n} = - \frac{\partial}{\partial \phi} \epsilon_n = - \frac{eh}{mL^2} (n + \frac{\phi}{\phi_0}) $$. The total current is:
+
+$$ I = \sum_n i_n f(\epsilon, \mu, T) = - \sum_n \frac{ \partial }{ \partial \phi } \epsilon_n  (1 + \exp( - \frac{\mu - \epsilon_n}{k_{B} T}))^{-1} = - \frac{\partial \Omega}{\partial \phi} $$
+
+$$ \Omega = -k_{B} T \sum_n \ln(1 + \exp(- \frac{\mu - \epsilon_n}{k_{B} T}) ) $$
+
+We only consider the area between $$ -\frac{1}{2} \phi_0 $$ to $$ \frac{1}{2} \phi_0 $$ due to the periodicity of the system with magnetic flux. 
 
 
