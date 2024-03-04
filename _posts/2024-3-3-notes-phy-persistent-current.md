@@ -79,5 +79,18 @@ We can see that the energy is periodic with $$ \frac{\phi}{\phi_0} $$, as shown 
 
 The vector potential $$ \vec{A} $$ is not unique $$ \vec{A}' = \vec{A} + \nabla \Lambda$$, we can say $$ \vec{A}'$$ is in the different gauge. All the physical quantities are gauge invariant, though the Schrödinger equation and the boundary condition are not, that means we could choose the gauge to simplify the calculation. 
 
+$$ \nabla \Lambda = - \vec{A} $$
+
+$$ \Lambda = - \int_{r_0}^{r} \rm{d} r' \vec{A} (r') = - \iint \rm{d} S \cdot (\nabla \times \vec{A}) = - \phi $$
+
+Under the gauge tansformation there is:
+
+$$ (\vec{p} + e \vec{A}) e^{ - i \frac{ e \Lambda}{ \hbar}} = e^{ - i \frac{ e \vec{A}}{ \hbar}} \vec{p}, \ \nabla \Lambda = \vec{A}  $$
+
+And the wave function in the new gauge is $$ \psi'(u) = e^{ - 2 \pi i \frac{ \Lambda}{ \phi_0}} \psi(u) $$. The boundary condition writes as:
+
+$$ \psi'(u+L) = e^{ - 2 \pi i \frac{ \Lambda(r + L)}{ \phi_0}} \psi(u) = e^{ - 2 \pi i \frac{ \Lambda(r + L) - \Lambda(r)}{ \phi_0}} \psi(u) = \exp(2 \pi i \frac{\phi}{\phi_0}) \psi'(u) $$
+
+With Hamiltonian $$ H' = \frac{h^2}{2mL^2} (-iR \frac{\partial }{ \partial u })^2 $$
 
 
