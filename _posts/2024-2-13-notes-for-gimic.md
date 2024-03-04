@@ -6,7 +6,7 @@ tags: [gimic, DFT]
 categories: DFT
 giscus_comments: true
 related_posts: true
-thumbnail: assets/img/gimic_plane1.png
+thumbnail: assets/img/blog/gimic/gimic_plane1.png
 toc:
   sidebar: left
 ---
