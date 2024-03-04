@@ -106,6 +106,15 @@ $$ I = \sum_n i_n f(\epsilon, \mu, T) = - \sum_n \frac{ \partial }{ \partial \ph
 
 $$ \Omega = -k_{B} T \sum_n \ln(1 + \exp(- \frac{\mu - \epsilon_n}{k_{B} T}) ) $$
 
-We only consider the area between $$ -\frac{1}{2} \phi_0 $$ to $$ \frac{1}{2} \phi_0 $$ due to the periodicity of the system with magnetic flux. 
+We only consider the area between $$ -\frac{1}{2} \phi_0 $$ to $$ \frac{1}{2} \phi_0 $$ due to the periodicity of the system with magnetic flux. The arrangement of the energy levels are different for different cases of magnetic flux, while there still exist couples that will cancel each other, the $$2n+1$$ and $$2n+2$$ couple($$n>0$$), $$ i_{2n+1} + i_{2n+2} = - \frac{2eh}{mL^2} \frac{\phi}{\phi_0} $$. When the total electron number $$N = 4n+2$$(spin degeneracy considered):
 
+$$I_{4n+2} = -\frac{eh}{mL^2}(4n+2) \frac{\phi}{\phi_0}$$
+
+The contribution of the next three electrons are:
+
+$$\delta I = \frac{eh}{mL^2} (\rm{sgn}(\phi) N - \frac{\phi}{\phi_0} ), \ N = 4n + 3$$
+
+$$\delta I = \frac{eh}{mL^2} (\rm{sgn}(\phi) N - \frac{\phi}{\phi_0} ), \ N = 4n + 4$$
+
+$$\delta I = \frac{eh}{mL^2} (- \rm{sgn}(\phi) N - \frac{\phi}{\phi_0} ), \ N = 4n + 5$$
 
