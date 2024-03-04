@@ -109,6 +109,8 @@ Generate grids perpendicularly to the `bond`/`line`, then fix its orientation, b
 
 In integral calculation, `bond` in `Grid` function is used to generate the plane grid. [The ’bond’ type grids define a plane through a bond, or any other defined vector. The plane is orthogonal to the vector defining the bond.](https://github.com/qmcurrents/gimic/blob/master/doc/grids.rst) To fix the orientation of the plane(or it will rotate along the bond), `fixpoint`/`fixcoord` is needed, the line of rectangle should be parallel to the projection of the vector connecting rotation axis of plane and fixpoint onto the plane.
 
+**The positive direction of `bond` grids (a,b) is the current from b to a.**
+
 Figure following shows the plane grids under parameters:
 v
 ```
