@@ -53,7 +53,7 @@ For the relationship between vector potential and magnetic flux, we have:
 
 $$ \iint \rm{d} S \cdot \vec{B} = \iint \rm{d} S \cdot ( \nabla \times \vec{A} ) = \iint \rm{d} l \cdot \vec{A} $$
 
-Which means $$ \phi =  A \cdot L$$. Then rewrite the Hamiltonian:
+Which means $$ \phi = A \cdot L$$. Then rewrite the Hamiltonian:
 
 $$ H = \frac{1}{2m}(-i \hbar \frac{ \partial}{ \partial u} + e \frac{ \phi}{ L})^{2} = \frac{h^2}{2mL^2} ( - i R \frac{ \partial}{ \partial u} + \frac{ \phi}{ {\phi}_{0}})^2 $$
 
@@ -63,12 +63,21 @@ $$ \psi(u) = \frac{1}{ \sqrt{L} } \exp(i \frac{2n \pi u}{L}), $$
 
 $$ { \epsilon}_{n} = \frac{h^2}{2mL^2} ( \frac{1}{L} 2n \pi R + \frac{\phi}{\phi_0})^2 = \frac{h^2}{2mL^2} ( n + \frac{\phi}{\phi_0})^2  $$
 
-We can see that the energy is periodic with $$ \frac{\phi}{\phi_0} $$
+We can see that the energy is periodic with $$ \frac{\phi}{\phi_0} $$, as shown as follows:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/blog/1Dring/energy1D.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    The energy bands of 1D ring.
+</div>
 
 
 ### Gauge transformation
 
-The vector potential $$ \vec{A} $$ is not unique $$ \vec{A}' = \vec{A} + \nabla \Lambda$$, we can say $$ \vec{A}'$$ is in the different gauge. All the physical quantities are gauge invariant, though the Schrödinger equation and the boundary condition are not, that means we could choose the gauge to simplify the calculation.
+The vector potential $$ \vec{A} $$ is not unique $$ \vec{A}' = \vec{A} + \nabla \Lambda$$, we can say $$ \vec{A}'$$ is in the different gauge. All the physical quantities are gauge invariant, though the Schrödinger equation and the boundary condition are not, that means we could choose the gauge to simplify the calculation. 
 
 
 
