@@ -10,6 +10,11 @@ toc:
   sidebar: left
 ---
 
+## Input format 
+
+Input format is different between Windows and linux.
+
+
 ## The structure of shell and basis function for gtf in fch file
 
 ### `Shell type`:
