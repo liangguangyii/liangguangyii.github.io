@@ -12,7 +12,7 @@ toc:
 
 ## Input format 
 
-Input format is different between Windows and linux.
+Input format is different between Windows and linux. the blank line number is different.
 
 
 ## The structure of shell and basis function for gtf in fch file
