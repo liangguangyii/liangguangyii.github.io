@@ -109,3 +109,4 @@ nav_order: 1
 - [ ] [Some modification on SOS method, cause there exist unphysical resonances.](https://pubs.rsc.org/en/content/articlelanding/2017/sc/c7sc00968b)
     - [ ] [DIM/QM method and dressed tensor method](https://pubs.acs.org/doi/10.1021/acs.jctc.6b00940)
     - [ ] [DIM/QM method in metal cluster](https://pubs.aip.org/aip/jcp/article/133/7/074103/189240/A-discrete-interaction-model-quantum-mechanical)
+    - [ ] [N-terms and K-terms in SOS method](https://opg.optica.org/josab/fulltext.cfm?uri=josab-33-4-780&id=338584)
