@@ -7,7 +7,6 @@ categories: Physics
 giscus_comments: true
 related_posts: true
 tikzjax: true
-thumbnail: assets/img/blog/1Dring/energy1D.png
 toc:
   sidebar: left
 ---
