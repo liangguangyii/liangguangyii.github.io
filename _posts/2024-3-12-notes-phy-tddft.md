@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TDDFT
-date: 2024-3-10 15:01:00
+title: TDDFT theory
+date: 2024-3-11 15:01:00
 tags: ["Quantum mechanics"]
 categories: Physics
 giscus_comments: true
