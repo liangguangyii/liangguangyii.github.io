@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistent current in 1D ring
+title: Persistent current in 1-D ring
 date: 2024-2-13 21:01:00
 tags: ["Quantum mechanics"]
 categories: Physics
