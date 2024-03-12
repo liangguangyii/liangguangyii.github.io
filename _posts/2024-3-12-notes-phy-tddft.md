@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistent current in 1D ring
+title: TDDFT
 date: 2024-3-10 21:01:00
 tags: ["Quantum mechanics"]
 categories: Physics
@@ -33,5 +33,9 @@ In Heisenberg picture, the operators are time-dependent, and the wave function i
 
 Operators in Heisenberg picture have the following form:
 $$ \hat{O}^{H} (t) = \exp(\frac{i}{\hbar} \hat{H} t) \hat{O}^{S} \exp(-\frac{i}{\hbar} \hat{H} t) $$
+
+The motion of equation for operators in Heisenberg picture is given as:
+
+$$ i \hbar \frac{\partial }{ \partial t} \hat{O}^{H} (t) = [\hat{O}^{H}(t), \hat{H}] $$
 
 ### Interaction picture
