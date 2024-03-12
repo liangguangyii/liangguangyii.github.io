@@ -23,11 +23,14 @@ $$ \hat{H} \Phi(\vec{r}) = E_{n} \Phi_{n}(\vec{r}), $$
 
 Where $$ \Psi(\vec{r}, t) = \sum_{n} \exp(-\frac{i}{\hbar} E_{n}) \phi_{n}(\vec{r})$$, and the operators are all time-indenpendent, it's called Schrödinger picture. The transition matrix elements are given as:
 
-$$ O_{mn} = \langle $$
+$$ O_{mn} = \langle \Psi_m | \hat{O} | \Psi_n \rangle $$
 
 
 ### Heisenberg picture
 
 In Heisenberg picture, the operators are time-dependent, and the wave function is time-independent.
+
+Operators in Heisenberg picture have the following form:
+$$ \hat{O}^{H} (t) = \exp(\frac{i}{\hbar} \hat{H} t) \hat{O}^{S} \exp(-\frac{i}{\hbar} \hat{H} t) $$
 
 ### Interaction picture
