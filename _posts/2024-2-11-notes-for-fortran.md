@@ -33,3 +33,12 @@ function func_name(arg1, arg2, arg3) result(result_name)
     result_name%value2 = arg1 - arg2 - arg3
 end function func_name
 ```
+
+## File I/O
+
+### `read`
+**In Fortran, `read` function will not read the last line of file, if the last line is empty.**
+
+
+### `rewind`
+ 
