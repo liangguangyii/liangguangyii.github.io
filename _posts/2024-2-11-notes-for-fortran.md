@@ -41,4 +41,29 @@ end function func_name
 
 
 ### `rewind`
+
+## Trigonometric functions
+
+### `xxx` and `xxxd`
+
+Trigonometric or anti-trigonometric functions with `d` suffix, such as `sin` and `sind`, `cos` and `cosd`, `tan` and `tand`, `asin` and `asind`, `acos` and `acosd`, `atan` and `atand`, are used to calculate the angle in degree.
+
+And the functions without `d` suffix are used to calculate the angle in radian.
+
+### `atan` and `atan2`
+
+`atan2` ouputs the true augument of the input parameters.
+
+The input parameters of `atan2(y,x)` are two real numbers `y` and `x`, corresponding to y/x, the output range is from -π to π, different from `atan`, which is from -π/2 to π/2.
+
+```fortran
+write(*,*) atan2(1D0, 1D0)    !0.7853981633974483
+write(*,*) atan2(1D0, -1D0)   !2.356194490192345
+write(*,*) atan2(-1D0, -1D0)  !-2.356194490192345
+write(*,*) atan2(-1D0, 1D0)   !-0.7853981633974483
+
+write(*,*) atan(1D0)          !0.7853981633974483
+write(*,*) atan(-1D0)         !-0.7853981633974483
+```
+
  
