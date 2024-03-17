@@ -118,6 +118,12 @@ Here $$t_0$$ is the time when the perturbation is added, and we could take $$t_0
 
 Then for an abitrary operator $$\hat{O}$$, the expectation value of the operator in the perturbed system is:
 
-$$ \langle O(t) \rangle  = \langle \Psi'(t) | O^S | \Psi'(t) \rangle \\ = \langle \Psi(0) | (1 + i \int_0^t \rm{d} t' H_1^I (t') ) e^{i H_0 t} O^S  e^{-iH_0 t} (1 - i \int_0^t \rm{d} t' H_1^I (t') ) | \Psi(0) \rangle $$
+$$
+\begin{aligned}
+ \langle O(t) \rangle  & = \langle \Psi'(t) | O^S | \Psi'(t) \rangle \\ 
+ & = \langle \Psi(0) | (1 + i \int_0^t \rm{d} t' H_1^I (t') ) e^{i H_0 t} O^S  e^{-iH_0 t} (1 - i \int_0^t \rm{d} t' H_1^I (t') ) | \Psi(0) \rangle
+\end{aligned} 
+$$
+
 
 
