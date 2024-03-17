@@ -33,6 +33,7 @@ In Heisenberg picture, the operators are time-dependent, and the wave function i
 $$ \Psi^{H} (\vec{r}) = \exp(\frac{i}{\hbar} \hat{H} t) \Psi^{S}(\vec{r}, t)$$
 
 Operators in Heisenberg picture have the following form:
+
 $$ \hat{O}^{H} (t) = \exp(\frac{i}{\hbar} \hat{H} t) \hat{O}^{S} \exp(-\frac{i}{\hbar} \hat{H} t) $$
 
 The motion of equation for operators in Heisenberg picture is given as:
@@ -54,5 +55,24 @@ $$ \hat{O}^{I} = \exp(\frac{i}{\hbar} \hat{H}_{0} t ) \hat{O}^{S} \exp( - \frac{
 The motion of equations are:
 
 $$ i \hbar \frac{\partial}{\partial t} \Psi^{I} (\vec{r},t)  = \hat{H}_{1}^{I} \Psi^{I}(\vec{r}, t), $$
-$$ i \hbar \frac{\partial}{\partial t} \hat{O}^{I}(t) = [\hat{O}^{I}(t), \hat{H}_0^S], $$
+
+$$ i \hbar \frac{\partial}{\partial t} \hat{O}^{I}(t) = [\hat{O}^{I}(t), \hat{H}_0], $$
+
+### Transformation between Interaction and Heisenberg picture
+
+In Heisenberg picture, the wavefunction is time-independent, si that $$ \Psi^S(0) = \Psi^I(0) = \Psi^H $$, that is the reason why the transition to Heisenberg picture is important.
+
+Then the time evolution of $$ \Psi^I $$ becomes the transformation between Interaction and Heisenberg picture:
+
+$$ \Psi^I (t) = U(t,0) \Psi^I(0) = U(t,0) \Psi^H, $$
+
+$$ U(t_1,t_2) = U(t_1 - t_2) = \exp(\frac{i}{\hbar}H_0 \Delta t) \exp(-\frac{i}{\hbar}H \Delta t), $$
+
+Time evolution operator $$ U(t_1,t_2) $$only depends on $$ \Delta t = t_1 - t_2 $$ thus it could be written as $$U(t)$$, and its motion of equation writes as:
+
+$$ i \hbar \frac{\partial}{\partial t} U(t) = \exp(\frac{i}{\hbar}H_0 t) H_1(t) \exp(-\frac{i}{\hbar}H t) = H_1^I(t) U(t), $$
+
+By using the initial condition $$ U(0) = 1 $$, the time evolution operator could be written as:
+
+$$ U(t) = 1 - \frac{i}{\hbar} \int_0^t \rm{d} t_1 H_1^I (t_1) U(t_1), $$
 
