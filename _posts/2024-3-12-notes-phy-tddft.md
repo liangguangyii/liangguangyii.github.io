@@ -76,3 +76,48 @@ By using the initial condition $$ U(0) = 1 $$, the time evolution operator could
 
 $$ U(t) = 1 - \frac{i}{\hbar} \int_0^t \rm{d} t_1 H_1^I (t_1) U(t_1), $$
 
+
+## TDDFT
+
+### Linear Response Theory
+
+Considering a sytem with time-dependent external perturbation $$ \delta v_{\rm{ext}} (\vec{r},t) $$, which is added at $$t=0$$:
+
+$$\delta v_{\rm{ext}} (\vec{r},t) = 0, \ \rm{for} \ t\leq ,$$
+
+And $$ v_{\rm{ext}} (\vec{r},t) = v_{\rm{ext},0}(\vec{r}) +  \delta v_{\rm{ext}} (\vec{r},t) $$. Expand the electron density:
+
+$$ n(\vec{r},t) = n_0(\vec{r},t) + n_1(\vec{r},t) + n_2(\vec{r},t) + \cdots,$$
+
+And to the first order, the response to the external perturbation is:
+
+$$ n_1 (\vec{r},t) = \int \rm{d} t' \int \rm{d}^3 r' \chi(\vec{r}t, \vec{r}'t') \delta v_{\rm{ext}} (\vec{r}',t'), $$
+
+Where
+
+$$ \chi(\vec{r}t, \vec{r}'t') = -i \theta(t - t') \langle \Psi_0 | [\hat{n}_0(\vec{r},t) , \hat{n}_0(\vec{r},t)] | \Psi_0 \rangle $$
+
+Proof:
+
+The key method is to use the information of the unperturbed system to get the quantities under the perturbation. First, considering the states in Schrödinger picture, use $$\Psi'$$ and $$\Psi$$  to represent the states in the perturbed and unperturbed system:
+
+$$ \Psi' (t) = e^{-i H_0 t}  A(t) \Psi(0), \ H = H_0 + H_1$$
+
+By using $$ i \frac{\partial}{\partial t} \Psi' (t) = H \Psi'(t) $$ and $$ i \frac{\partial}{\partial t} \Psi (t) = H_0 \Psi(t) $$, we get the motion of equation for $$A(t)$$:
+
+$$ \dot{A} = e^{i H_0 t} H_1(t) e^{-i H_0 t} A(t) = H_1^I (t) A(t), \ A(0) = 1, $$
+
+
+$$ A(t) = 1 - i \int_{t_0}^t \rm{d} t' H_1^I(t') A(t') = 1 - i \int_{t_0}^t \rm{d} t' H_1^I(t') + \cdots,  $$
+
+Then the interaction wave function is (approximate to the first order):
+
+$$ \Psi'(t) = e^{-i H_0 (t-t_0)} \Psi(t_0) - i e^{-i H_0 (t-t_0)} \int_{t_0}^t \rm{d} t' H_1^I (t') \Psi(t_0), $$
+
+Here $$t_0$$ is the time when the perturbation is added, and we could take $$t_0 = 0$$.
+
+Then for an abitrary operator $$\hat{O}$$, the expectation value of the operator in the perturbed system is:
+
+$$ \langle O(t) \rangle  = \langle \Psi'(t) | O^S | \Psi'(t) \rangle \\ = \langle \Psi(0) | (1 + i \int_0^t \rm{d} t' H_1^I (t') ) e^{i H_0 t} O^S  e^{-iH_0 t} (1 - i \int_0^t \rm{d} t' H_1^I (t') ) | \Psi(0) \rangle $$
+
+
