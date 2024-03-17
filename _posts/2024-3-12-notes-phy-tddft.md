@@ -97,7 +97,7 @@ Where
 
 $$ \chi(\vec{r}t, \vec{r}'t') = -i \theta(t - t') \langle \Psi_0 | [\hat{n}_0(\vec{r},t) , \hat{n}_0(\vec{r},t)] | \Psi_0 \rangle $$
 
-Proof:
+#### Proof
 
 The key method is to use the information of the unperturbed system to get the quantities under the perturbation. First, considering the states in Schrödinger picture, use $$\Psi'$$ and $$\Psi$$  to represent the states in the perturbed and unperturbed system:
 
@@ -121,9 +121,12 @@ Then for an abitrary operator $$\hat{O}$$, the expectation value of the operator
 $$
 \begin{aligned}
  \langle O(t) \rangle  & = \langle \Psi'(t) | O^S | \Psi'(t) \rangle \\ 
- & = \langle \Psi(0) | (1 + i \int_0^t \rm{d} t' H_1^I (t') ) e^{i H_0 t} O^S  e^{-iH_0 t} (1 - i \int_0^t \rm{d} t' H_1^I (t') ) | \Psi(0) \rangle
+ & = \langle \Psi(0) | (1 + i \int_0^t \rm{d} t' H_1^I (t') ) e^{i H_0 t} O^S  e^{-iH_0 t} (1 - i \int_0^t \rm{d} t' H_1^I (t') ) | \Psi(0) \rangle \\
+ & = \langle O(t) \rangle_{0} - i \langle \int_0^t \rm{d} t' [O(t) , H_1^I(t') ] \rangle_0 , \\
 \end{aligned} 
 $$
+
+Where the subscript $$0$$ means the expectation value in the unperturbed system, i.e. the expection value of wavefunction $$ \Psi(0) $$. 
 
 
 
