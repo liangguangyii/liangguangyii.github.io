@@ -122,11 +122,27 @@ $$
 \begin{aligned}
  \langle O(t) \rangle  & = \langle \Psi'(t) | O^S | \Psi'(t) \rangle \\ 
  & = \langle \Psi(0) | (1 + i \int_0^t \rm{d} t' H_1^I (t') ) e^{i H_0 t} O^S  e^{-iH_0 t} (1 - i \int_0^t \rm{d} t' H_1^I (t') ) | \Psi(0) \rangle \\
- & = \langle O(t) \rangle_{0} - i \langle \int_0^t \rm{d} t' [O(t) , H_1^I(t') ] \rangle_0 , \\
+ & = \langle O(t) \rangle_{0} - i \int_0^t \rm{d} t' \langle [O(t) , H_1^I(t') ] \rangle_0 , \\
 \end{aligned} 
 $$
 
-Where the subscript $$0$$ means the expectation value in the unperturbed system, i.e. the expection value of wavefunction $$ \Psi(0) $$. 
+Where the subscript $$0$$ means the expectation value in the unperturbed system, i.e. the expection value of wavefunction $$ \Psi(0) $$. Then the first-ordered response to the external perturbation is:
+
+$$
+\begin{aligned}
+\delta \langle O(t) \rangle & = \langle O(t) \rangle - \langle O(t) \rangle_0 \\
+& = - i \int_0^t \rm{d} t' \langle [O(t) , H_1^I(t') ] \rangle_0, \\
+\end{aligned}
+$$
+
+Now think about the response of the electron density to the external perturbation $$ \delta v_{\rm{ext}}^I (t) $$，$$ H_1^I(t) = \int \rm{d} r n^I(\vec{r},t) \delta v_{\rm{ext}} (\vec{r},t) $$, so that:
+
+$$
+\begin{aligned}
+\delta \langle n^I(\vec{r},t) \rangle & = -i \int \rm{d} r' \int_{t_0}^{t} \rm{d} t' [n^I(\vec{r},t), n^I(\vec{r}',t')] \delta v_{\rm{ext}} (\vec{r}',t'), \\
+& = -i \int \rm{d} r' \int_{-\infty}^{\infty} \theta (t - t') \rm{d} t' [n^I(\vec{r},t), n^I(\vec{r}',t')] \delta v_{\rm{ext}} (\vec{r}',t')
+\end{aligned}
+$$
 
 
 
