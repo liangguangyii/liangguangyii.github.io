@@ -123,11 +123,13 @@ $$ \int \rm{d} r w \nabla \cdot [n_0 \nabla w_n] = - \int \rm{d} r n_0 [\nabla w
 
 Where the surface integral vanishes because $$w_n \propto v_{\rm{ext}} \propto \frac{1}{r}$$.
 
+**R-G mapping only suits for scalar potential, for electricmagnetic filed, TDCDFT is used.**
+
 ### Linear Response Theory
 
 Considering a sytem with time-dependent external perturbation $$ \delta v_{\rm{ext}} (\vec{r},t) $$, which is added at $$t=0$$:
 
-$$\delta v_{\rm{ext}} (\vec{r},t) = 0, \ \rm{for} \ t\leq ,$$
+$$\delta v_{\rm{ext}} (\vec{r},t) = 0, \ \rm{for} \ t\leq 0 ,$$
 
 And $$ v_{\rm{ext}} (\vec{r},t) = v_{\rm{ext},0}(\vec{r}) +  \delta v_{\rm{ext}} (\vec{r},t) $$. Expand the electron density:
 
@@ -139,7 +141,21 @@ $$ n_1 (\vec{r},t) = \int \rm{d} t' \int \rm{d}^3 r' \chi(\vec{r}t, \vec{r}'t') 
 
 Where
 
-$$ \chi(\vec{r}t, \vec{r}'t') = -i \theta(t - t') \langle \Psi_0 | [\hat{n}_0(\vec{r},t) , \hat{n}_0(\vec{r},t)] | \Psi_0 \rangle $$
+$$ \chi(\vec{r}t, \vec{r}'t') = -i \theta(t - t') \langle \Psi_0 | [\hat{n}_0(\vec{r},t) , \hat{n}_0(\vec{r'},t')] | \Psi_0 \rangle $$
+
+By using $$ n_0 (\vec{r},t) = e^{i H_0 t} n_0 (\vec{r}) e^{-i H_0 t} $$, the Fourier transformation of the response function is:
+
+$$
+\begin{aligned}
+  \chi (\vec{r}, \vec{r}', \omega) & = - i \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
+  & = - \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} \langle \Psi_0 | e^{i \epsilon_0 t} n_0(\vec{r}) e^{-i \epsilon_n t} | \Psi_n \rangle \langle \Psi_n | e^{i \epsilon_n t'} n_0(\vec{r}',t') e^{- i \epsilon_0 t'} | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
+  & = -i \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} e^{ - i (\epsilon_n - \epsilon_0) \tau } \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
+  & = -i \sum_n \{ \int_{0}^{\infty} \rm{d} \tau e^{i (\omega + i 0^+) \tau} e^{ - i (\epsilon_n - \epsilon_0) \tau } \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
+  & = \sum_n [\frac{ \langle \Psi_0 | \hat{n}(\vec{r}) | \Psi_n \rangle \langle \Psi_n | \hat{n} (\vec{r}') | \Psi_0 \rangle }{\omega - (\epsilon_n - \epsilon_0) + i 0^+ } - \frac{ \langle \Psi_0 | \hat{n}(\vec{r}') | \Psi_n \rangle \langle \Psi_n | \hat{n} (\vec{r}) | \Psi_0 \rangle }{\omega + (\epsilon_n - \epsilon_0) + i 0^+ } ] ,\\
+\end{aligned}  
+$$
+
+Here $$ i 0^+$$ is used to refine the integral, to let the integral vanish at $$t \rightarrow \infty$$, and to let the contour of the integral in the area that $$ \omega \geq 0 $$ when transform to time domain $$ \int \rm{d} \tau e^{-i \omega \tau} \chi (\vec{r}', \vec{r}, \omega) $$.
 
 #### Proof
 
@@ -188,6 +204,8 @@ $$
 \end{aligned}
 $$
 
-**And the Interaction picture is the same as the Heisenberg picture with no external perubation.**
+**And the Interaction picture is the same as the Heisenberg picture with no external pertubation.**
+
+
 
 
