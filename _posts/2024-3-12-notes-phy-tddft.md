@@ -79,6 +79,50 @@ $$ U(t) = 1 - \frac{i}{\hbar} \int_0^t \rm{d} t_1 H_1^I (t_1) U(t_1), $$
 
 ## TDDFT
 
+### Rouge-Gross Theorem
+
+Rouge-Gross mapping: 
+
+Considering two different external field, which differ  by more than a purely time-dependent factor:
+
+$$ v_{\rm{ext}}' (\vec{r},t) \neq v_{\rm{ext}} (\vec{r},t) + c(t) \ \leftrightarrow \frac{\partial^k}{\partial^k t} [v_{\rm{ext}}' (\vec{r},t) - v_{\rm{ext}} (\vec{r},t)]|_{t=0} $$
+
+The difference of a purely time-dependent factor means that all physical quantities are the same. Then think about the motion of equation for the current operator $$ \hat{j} = \frac{1}{2i} \sum_{i} (\nabla_i \delta(\vec{r} - \vec{r}_i) + \delta (\vec{r} - \vec{r}_i) \nabla_i) $$ at $$t=0$$:
+
+$$
+\begin{aligned}
+\frac{\partial}{\partial t} j(\vec{r},t) |_{t=0} & = -i \langle \Psi_0 | [\hat{j}(\vec{r}), \hat{H}(\vec{r},0)] | \Psi_0 \rangle ,\\ 
+& = - n_0 (\vec{r}) \nabla v_{\rm{ext}} (\vec{r},0),\\ 
+\end{aligned}
+$$
+
+Then for two different $$v_{\rm{ext}}$$:
+
+$$
+\begin{aligned}
+ \frac{\partial}{\partial t} [\vec{j}(\vec{r},t) - \vec{j}'(\vec{r},t)] |_{t=0} & = -n_0 (\vec{r}) \nabla [ v_{\rm{ext}} (\vec{r},0) - v_{\rm{ext}}' (\vec{r},0) ], \\
+ & = -n_0 (\vec{r}) \nabla w(\vec{r},0),\\
+\end{aligned}
+$$
+
+And r.h.s. doesn't equal to zero if the difference is not a purely time-dependent factor, so as to the higher order derivatives:
+
+$$\frac{\partial^{n+1}}{\partial t^{n+1}} [\vec{j}(\vec{r},t) - \vec{j}'(\vec{r},t)] |_{t=0} = - n_0 (\vec{r}) \nabla \frac{\partial^{n}}{\partial t^{n}} w(\vec{r},0) = - n_0 (\vec{r}) \nabla w_n(\vec{r},0), $$
+
+And by using the continuity equation:
+
+$$ \frac{\partial }{\partial t} n(\vec{r},t) = - \nabla \cdot \vec{j} (\vec{r},t), $$
+
+We reach the equation:
+
+$$\frac{\partial^{n+2}}{\partial t^{n+2}} [n(\vec{r},t) - n'(\vec{r},t)] = - \nabla \cdot [n_0(\vec{r}) \nabla w_n(\vec{r},0) ], $$
+
+The r.h.s. won't equal to zero in most physical cases:
+
+$$ \int \rm{d} r w \nabla \cdot [n_0 \nabla w_n] = - \int \rm{d} r n_0 [\nabla w_n]^2 + \iint \rm{d} S \cdot [n_0 w_n \nabla w_n], $$
+
+Where the surface integral vanishes because $$w_n \propto v_{\rm{ext}} \propto \frac{1}{r}$$.
+
 ### Linear Response Theory
 
 Considering a sytem with time-dependent external perturbation $$ \delta v_{\rm{ext}} (\vec{r},t) $$, which is added at $$t=0$$:
@@ -144,5 +188,6 @@ $$
 \end{aligned}
 $$
 
+**And the Interaction picture is the same as the Heisenberg picture with no external perubation.**
 
 
