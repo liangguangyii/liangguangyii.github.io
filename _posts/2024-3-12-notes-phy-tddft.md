@@ -137,7 +137,7 @@ $$ n(\vec{r},t) = n_0(\vec{r},t) + n_1(\vec{r},t) + n_2(\vec{r},t) + \cdots,$$
 
 And to the first order, the response to the external perturbation is:
 
-$$ n_1 (\vec{r},t) = \int \rm{d} t' \int \rm{d}^3 r' \chi(\vec{r}t, \vec{r}'t') \delta v_{\rm{ext}} (\vec{r}',t'), $$
+$$ n_1 (\vec{r},t) = \int_0^{\infty} \rm{d} t' \int \rm{d}^3 r' \chi(\vec{r}t, \vec{r}'t') \delta v_{\rm{ext}} (\vec{r}',t'), $$
 
 Where
 
@@ -148,14 +148,24 @@ By using $$ n_0 (\vec{r},t) = e^{i H_0 t} n_0 (\vec{r}) e^{-i H_0 t} $$, the Fou
 $$
 \begin{aligned}
   \chi (\vec{r}, \vec{r}', \omega) & = - i \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
-  & = - \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} \langle \Psi_0 | e^{i \epsilon_0 t} n_0(\vec{r}) e^{-i \epsilon_n t} | \Psi_n \rangle \langle \Psi_n | e^{i \epsilon_n t'} n_0(\vec{r}',t') e^{- i \epsilon_0 t'} | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
-  & = -i \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} e^{ - i (\epsilon_n - \epsilon_0) \tau } \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
-  & = -i \sum_n \{ \int_{0}^{\infty} \rm{d} \tau e^{i (\omega + i 0^+) \tau} e^{ - i (\epsilon_n - \epsilon_0) \tau } \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
-  & = \sum_n [\frac{ \langle \Psi_0 | \hat{n}(\vec{r}) | \Psi_n \rangle \langle \Psi_n | \hat{n} (\vec{r}') | \Psi_0 \rangle }{\omega - (\epsilon_n - \epsilon_0) + i 0^+ } - \frac{ \langle \Psi_0 | \hat{n}(\vec{r}') | \Psi_n \rangle \langle \Psi_n | \hat{n} (\vec{r}) | \Psi_0 \rangle }{\omega + (\epsilon_n - \epsilon_0) + i 0^+ } ] ,\\
+  & = - \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} \langle \Psi_0 | e^{i \Omega_0 t} n_0(\vec{r}) e^{-i \Omega_n t} | \Psi_n \rangle \langle \Psi_n | e^{i \Omega_n t'} n_0(\vec{r}',t') e^{- i \Omega_0 t'} | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
+  & = -i \sum_n \{ \int_0^{\infty} \rm{d} \tau e^{i \omega \tau} e^{ - i (\Omega_n - \Omega_0) \tau } \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
+  & = -i \sum_n \{ \int_{0}^{\infty} \rm{d} \tau e^{i (\omega + i 0^+) \tau} e^{ - i (\Omega_n - \Omega_0) \tau } \langle \Psi_0 | n_0(\vec{r},t) | \Psi_n \rangle \langle \Psi_n | n_0(\vec{r}',t') | \Psi_0 \rangle - (\vec{r},t \leftrightarrow \vec{r}',t') \} ,\\
+  & = \sum_n [\frac{ \langle \Psi_0 | \hat{n}(\vec{r}) | \Psi_n \rangle \langle \Psi_n | \hat{n} (\vec{r}') | \Psi_0 \rangle }{\omega - (\Omega_n - \Omega_0) + i 0^+ } - \frac{ \langle \Psi_0 | \hat{n}(\vec{r}') | \Psi_n \rangle \langle \Psi_n | \hat{n} (\vec{r}) | \Psi_0 \rangle }{\omega + (\Omega_n - \Omega_0) + i 0^+ } ] ,\\
 \end{aligned}  
 $$
 
-Here $$ i 0^+$$ is used to refine the integral, to let the integral vanish at $$t \rightarrow \infty$$, and to let the contour of the integral in the area that $$ \omega \geq 0 $$ when transform to time domain $$ \int \rm{d} \tau e^{-i \omega \tau} \chi (\vec{r}', \vec{r}, \omega) $$.
+Here $$ i 0^+$$ is used to refine the integral, to let the integral vanish at $$t \rightarrow \infty$$, and to force the contour line located in upper area so that $$\tau \geq 0$$ when transform to time domain $$ \int \rm{d} \tau e^{-i \omega \tau} \chi (\vec{r}', \vec{r}, \omega) $$.
+
+$$[- \frac{\nabla^2}{2} + \int \rm{d} r \frac{n(\vec{r},t)}{|\vec{r} - \vec{r}'|} + v_{\rm{ext},0}(\vec{r}) + v_{\rm{xc}}(\vec{r},t)] \Psi_n = \Omega_n \Psi_n$$
+
+Actually, it's difficult to get $$\chi$$ directly, **because all they are all interaction states, and we don't now its specific form. The "unpertubation states" in this case is the system withot $$\delta v_{\rm{ext}}$$, that means other terms, such as $$ v_{\rm{xc}}, \ n$$ are still time-dependent.** We could turn to the Kohn-Sham system, which is a non-interaction system, and for Kohn-Sham system, it's easily to get the response function:
+
+$$ n_1 (\vec{r},t) = \int_0^{\infty} \rm{d} t' \int \rm{d} r' \chi (\vec{r}t, \vec{r}'t') \delta v_{\rm{KS}} (\vec{r}',t'), $$
+
+So all the vairiation that contains time are all packed into $$ \delta v_{\rm{KS}} $$, and the original states does not depend on time, so as to the wavefuctions, they are just the eigenstates of the Kohn-Sham Hamiltonian.
+
+$$[- \frac{\nabla^2}{2} + \int \rm{d} r \frac{n(\vec{r})}{|\vec{r} - \vec{r}'|} + v_{\rm{ext},0}(\vec{r}) + v_{\rm{xc}}(\vec{r})] \psi_j = \epsilon_j \psi_j$$
 
 #### Proof
 
@@ -200,11 +210,11 @@ Now think about the response of the electron density to the external perturbatio
 $$
 \begin{aligned}
 \delta \langle n^I(\vec{r},t) \rangle & = -i \int \rm{d} r' \int_{t_0}^{t} \rm{d} t' [n^I(\vec{r},t), n^I(\vec{r}',t')] \delta v_{\rm{ext}} (\vec{r}',t'), \\
-& = -i \int \rm{d} r' \int_{-\infty}^{\infty} \theta (t - t') \rm{d} t' [n^I(\vec{r},t), n^I(\vec{r}',t')] \delta v_{\rm{ext}} (\vec{r}',t')
+& = -i \int \rm{d} r' \int_0^{\infty} \theta (t - t') \rm{d} t' [n^I(\vec{r},t), n^I(\vec{r}',t')] \delta v_{\rm{ext}} (\vec{r}',t')
 \end{aligned}
 $$
 
-**And the Interaction picture is the same as the Heisenberg picture with no external pertubation.**
+**The integration of time starts from $$t_0$$, and the Interaction picture is the same as the Heisenberg picture with no external pertubation.**
 
 
 
