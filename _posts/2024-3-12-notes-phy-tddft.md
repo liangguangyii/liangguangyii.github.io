@@ -259,11 +259,42 @@ $$
 \end{aligned}
 $$
 
-And $$ f_{\rm{Hxc}} (\vec{r}_1 t_1, \vec{r}_2 t_2) = \frac{\delta (t_1 - t_2)}{| r_1 - r_2|} + f_{\rm{xc}} (\vec{r}_1 t_1, \vec{r}_2 t_2) $$. The are all functions to the density of ground state $$n_{\rm{GS}}$$.
+And 
 
+$$ f_{\rm{Hxc}} (\vec{r}_1 t_1, \vec{r}_2 t_2) = \frac{\delta (t_1 - t_2)}{| r_1 - r_2|} + f_{\rm{xc}} (\vec{r}_1 t_1, \vec{r}_2 t_2) $$
 
+The are all functions to the density of ground state $$n_{\rm{GS}}$$.
 
+#### Excitation energies and oscillator strength
 
+The excitation energies are the poles of the response function $$\chi$$, and by using Dyson equation of the response function, we could get the excitation energies of the system.
 
+$$ \chi (\omega) = \chi_{\rm{KS}} (\omega) + \chi_{\rm{KS}} (\omega) \cdot  f_{\rm{Hxc}} (\omega) \cdot \chi (\omega), $$
+
+$$ ( \bm{1} - \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) ) \cdot \chi (\omega) = \chi_{\rm{KS}} (\omega), $$
+
+Here we use the matrix form of the response function, in $$(\vec{r} t,\vec{r}' t')$$ space.
+ And the poles of $$ \chi $$ satisfy the equation:
+
+$$ \bm{1} - \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) = 0 \leftrightarrow \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) \cdot \xi (\omega) = \lambda (\omega) \xi(\omega),  $$
+
+Then using transition representation:
+
+$$
+\begin{aligned}
+& f_q = f_k - f_j ,\\
+& \omega_q = \epsilon_j- \epsilon_k, \\
+& \Phi_q = \psi_k^*  \psi_j, \\ 
+& \chi_{\rm{KS}} (\omega) = \sum_q f_q \frac{\Phi_q^* \Phi_q}{\omega - \omega_q + i 0^+}, \\
+&  \zeta_q (\omega) = \Phi_q^* \cdot f_{\rm{Hxc}} \cdot \xi ,\\
+\end{aligned}
+$$
+
+We have the equation:
+
+$$ \sum_q' \frac{M_{qq'}}{\omega - \omega_q + i 0^+} \zeta_q' (\omega) = \lambda (\omega) \zeta_q (\omega), $$
+
+Where $$ M_{qq'} = f_q' \Phi_q \cdot f_{\rm{Hxc}} \cdot \Phi_{q'} $$
+ 
 
 
