@@ -271,20 +271,20 @@ The excitation energies are the poles of the response function $$\chi$$, and by 
 
 $$ \chi (\omega) = \chi_{\rm{KS}} (\omega) + \chi_{\rm{KS}} (\omega) \cdot  f_{\rm{Hxc}} (\omega) \cdot \chi (\omega), $$
 
-$$ ( \bm{1} - \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) ) \cdot \chi (\omega) = \chi_{\rm{KS}} (\omega), $$
+$$ ( \hat{1} - \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) ) \cdot \chi (\omega) = \chi_{\rm{KS}} (\omega), $$
 
 Here we use the matrix form of the response function, in $$(\vec{r} t,\vec{r}' t')$$ space.
  And the poles of $$ \chi $$ satisfy the equation:
 
-$$ \bm{1} - \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) = 0 \leftrightarrow \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) \cdot \xi (\omega) = \lambda (\omega) \xi(\omega),  $$
+$$ \hat{1} - \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) = 0 \leftrightarrow \chi_{\rm{KS}} (\omega) \cdot f_{\rm{Hxc}} (\omega) \cdot \xi (\omega) = \lambda (\omega) \xi(\omega),  $$
 
-Then using transition representation:
+Here $$\lambda(\Omega) = 1$$, it equals to 1 at the real excitation energies. Then using transition representation:
 
 $$
 \begin{aligned}
-& f_q = f_k - f_j ,\\
-& \omega_q = \epsilon_j- \epsilon_k, \\
-& \Phi_q = \psi_k^*  \psi_j, \\ 
+& f_q = f_k - f_j , \ f_{-q} = - f_q,\\
+& \omega_q = \epsilon_j- \epsilon_k, \ \omega_{-q} = - \omega_q, \\
+& \Phi_q = \psi_k^*  \psi_j, \ \Phi_{-q} = \Phi_q^*, \\ 
 & \chi_{\rm{KS}} (\omega) = \sum_q f_q \frac{\Phi_q^* \Phi_q}{\omega - \omega_q + i 0^+}, \\
 &  \zeta_q (\omega) = \Phi_q^* \cdot f_{\rm{Hxc}} \cdot \xi ,\\
 \end{aligned}
@@ -292,9 +292,51 @@ $$
 
 We have the equation:
 
-$$ \sum_q' \frac{M_{qq'}}{\omega - \omega_q + i 0^+} \zeta_q' (\omega) = \lambda (\omega) \zeta_q (\omega), $$
+$$ \sum_{q'} \frac{M_{qq'}}{\omega - \omega_{q'} + i 0^+} \zeta_q' (\omega) = \lambda (\omega) \zeta_q (\omega), $$
 
-Where $$ M_{qq'} = f_q' \Phi_q \cdot f_{\rm{Hxc}} \cdot \Phi_{q'} $$
+Where $$ M_{qq'} = f_q' \Phi_q \cdot f_{\rm{Hxc}} \cdot \Phi_{q'} $$. And if we seperate $$ \zeta_q $$ into q and -q terms and denotes them as $$X_q, \ Y_{-q}, \ q \geq 0$$ respectively, we know that $$ Y_{-q}^* = X_q $$, this is the common representation in many books. And for the excitation energies $$ \omega = \Omega $$, $$ \lambda(\Omega) = 1 $$ then the equation becomes:
+
+$$ \sum_{q'} (M_{qq'} + \omega_q \delta_{qq'}) \beta_{q'} = \Omega \beta_q, \ \beta_q = \frac{\zeta_q}{\Omega - \omega_q}, $$
+
+$$
+\begin{aligned}
+& q \geq 0: \ \sum_{q' \geq 0} (M_{qq'} + \omega_q \delta_{qq'}) \beta_{q'} + \sum_{q'<0} M_{q,-|q'|} \beta_{-|q'|} = \Omega \beta_q ,\\
+& q < 0: \ \sum_{q'\geq 0} M_{-|q|,q'} \beta_{q'} + \sum_{q' < 0} (M_{qq'} + \omega_q \delta_{qq'}) \beta_{q'} = \Omega \beta_q ,\\
+\end{aligned}
+$$
+
+$$
+\begin{pmatrix}
+A & B \\
+B* & A* \\
+\end{pmatrix}
+\begin{pmatrix}
+X \\
+Y \\
+\end{pmatrix}
+= \Omega
+\begin{pmatrix}
+1 & 0 \\
+0 & -1 \\
+\end{pmatrix}
+\begin{pmatrix}
+X \\
+Y \\
+\end{pmatrix}
+$$
  
+Here,
 
+$$
+\begin{aligned}
+& A_{qq'} = M_{qq'} + \omega_q \delta_{qq'}, \ q,q' \geq 0,\\
+& B_{qq'} = M_{q,-q'}, \ q ,q' \geq 0,\\
+\end{aligned}
+$$
+
+##### Approximate solution
+
+There are two kind of approximation, single-pole approximation(SPA) and small matrix approximation(SMA). In SPA, $$\chi_{\rm{KS}}$$ is expand at the pole $$\omega_q$$, $$ \chi_{\rm{KS}} = f_q \frac{\Phi_q^* (\vec{r}') \Phi_q (\vec{r})}{\omega - \omega_q + i 0^+} $$. It's the same to only take the diagonal elements of matrix $$A$$.
+
+And SMA also contains the backforward transition, i.e. the -q terms, $$ \chi_{\rm{KS}} = f_q \frac{\Phi_q^* (\vec{r}') \Phi_q (\vec{r})}{\omega - \omega_q + i 0^+} - f_q \frac{\Phi_q^* (\vec{r}) \Phi_q (\vec{r}')}{\omega + \omega_q + i 0^+} $$. It's the same to take the whole matrix $$M$$.
 
