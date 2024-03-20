@@ -7,7 +7,7 @@ categories: Physics
 giscus_comments: true
 related_posts: true
 tikzjax: true
-related_publications: Marques2012, McWeeny1969
+related_publications: Marques2012, McWeeny1969, MarquesNotes, CasidaNotes
 toc:
   sidebar: left
 ---
