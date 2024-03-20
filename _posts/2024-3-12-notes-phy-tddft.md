@@ -7,6 +7,7 @@ categories: Physics
 giscus_comments: true
 related_posts: true
 tikzjax: true
+related_publications: Marques2012, McWeeny1969, MarquesNotes, CasidaNotes 
 toc:
   sidebar: left
 ---
@@ -301,14 +302,14 @@ $$ \sum_{q'} (M_{qq'} + \omega_q \delta_{qq'}) \beta_{q'} = \Omega \beta_q, \ \b
 $$
 \begin{aligned}
 & q \geq 0: \ \sum_{q' \geq 0} (M_{qq'} + \omega_q \delta_{qq'}) \beta_{q'} + \sum_{q'<0} M_{q,-|q'|} \beta_{-|q'|} = \Omega \beta_q ,\\
-& q < 0: \ \sum_{q'\geq 0} M_{-|q|,q'} \beta_{q'} + \sum_{q' < 0} (M_{qq'} + \omega_q \delta_{qq'}) \beta_{q'} = \Omega \beta_q ,\\
+& q < 0: \ \sum_{q'\geq 0} M_{-|q|,q'} \beta_{q'} + \sum_{q' < 0} (M_{-|q|,-|q|'} - \omega_|q| \delta_{qq'}) \beta_{-|q|'} = \Omega \beta_q ,\\
 \end{aligned}
 $$
 
 $$
 \begin{pmatrix}
 A & B \\
-B* & A* \\
+B^* & A^* \\
 \end{pmatrix}
 \begin{pmatrix}
 X \\
@@ -334,9 +335,11 @@ $$
 \end{aligned}
 $$
 
+**$$\omega_q^* = \omega_q$$, then $$A_{qq'}^* = M_{-q,-q'} + \omega_q \delta_{qq'}$$.**
+
 ##### Approximate solution
 
 There are two kind of approximation, single-pole approximation(SPA) and small matrix approximation(SMA). In SPA, $$\chi_{\rm{KS}}$$ is expand at the pole $$\omega_q$$, $$ \chi_{\rm{KS}} = f_q \frac{\Phi_q^* (\vec{r}') \Phi_q (\vec{r})}{\omega - \omega_q + i 0^+} $$. It's the same to only take the diagonal elements of matrix $$A$$.
 
-And SMA also contains the backforward transition, i.e. the -q terms, $$ \chi_{\rm{KS}} = f_q \frac{\Phi_q^* (\vec{r}') \Phi_q (\vec{r})}{\omega - \omega_q + i 0^+} - f_q \frac{\Phi_q^* (\vec{r}) \Phi_q (\vec{r}')}{\omega + \omega_q + i 0^+} $$. It's the same to take the whole matrix $$M$$.
+And SMA also contains the backforward transition, i.e. the -q terms, $$ \chi_{\rm{KS}} = f_q \frac{\Phi_q^* (\vec{r}') \Phi_q (\vec{r})}{\omega - \omega_q + i 0^+} - f_q \frac{\Phi_q^* (\vec{r}) \Phi_q (\vec{r}')}{\omega + \omega_q + i 0^+} $$. It's the same to take the diagonal elements for the whole matrix $$M$$.
 
