@@ -7,7 +7,7 @@ categories: Physics
 giscus_comments: true
 related_posts: true
 tikzjax: true
-related_publications: Marques2012, McWeeny1969, MarquesNotes, CasidaNotes
+related_publications: Marques2012, McWeeny1969, MarquesNotes, CasidaNotes, Gross1996
 toc:
   sidebar: left
 ---
@@ -265,6 +265,31 @@ And
 $$ f_{\rm{Hxc}} (\vec{r}_1 t_1, \vec{r}_2 t_2) = \frac{\delta (t_1 - t_2)}{| r_1 - r_2|} + f_{\rm{xc}} (\vec{r}_1 t_1, \vec{r}_2 t_2) $$
 
 The are all functions to the density of ground state $$n_{\rm{GS}}$$.
+
+#### Dyson equation of response function (functional derivative)
+
+{% cite Gross1996 %} are the main reference for this part. First, considering the defination of the response function:
+
+$$
+n_1 (\vec{r}, t ) = \int \rm{d} t' \int \rm{d} r' \chi (\vec{r}t, \vec{r}'t') \delta v_{\rm{ext}} (\vec{r}',t'),
+$$
+
+So that $$ \chi (\vec{r} t, \vec{r}' t') = \frac{ \delta n_1 (\vec{r}, t) }{ \delta v_{\rm{ext}} (\vec{r}' ,t') } $$, and by using the chain rule:
+
+$$
+\chi (\vec{r} t, \vec{r}' t') = \int \rm{d} t_1 \int \rm{d} r_1 \frac{ \delta n_1 (\vec{r}, t) }{ \delta v_{\rm{KS}} (\vec{r}_1 ,t_1) } \frac{ \delta v_{\rm{KS}} (\vec{r}_1,t_1) }{ \delta v_{\rm{ext}} (\vec{r}' ,t') },
+$$
+
+Where $$ v_{\rm{KS}} (\rm{r}, t) = v_{\rm{ext}} (\vec{r}, t) + v_{\rm{H}} (\vec{r}, t) + v_{\rm{xc}} (\vec{r},t), \ v_{\rm{H}} (\vec{r},t) = \int \rm{d} r' \frac{n(\vec{r'}, t)}{ r -r' } $$. Defining the xc kernal by $$ f_{\rm{xc}} (\vec{r}t, \vec{r}'t') = \frac{\delta v_{\rm{xc}} (\vec{r},t) }{ \delta n_1 (\vec{r}',t') } $$, then:
+
+$$
+\begin{aligned}
+\chi (\vec{r} t, \vec{r}' t') & = \int \rm{d} t_1 \int \rm{d} r_1 \frac{ \delta n_1 (\vec{r}, t) }{ \delta v_{\rm{KS}} (\vec{r}_1 ,t_1) } \frac{ \delta v_{\rm{KS}} (\vec{r}_1,t_1) }{ \delta v_{\rm{ext}} (\vec{r}' ,t') }, \\
+& = \int \rm{d} t_1 \int \rm{d} r_1 \frac{ \delta n_1 (\vec{r}, t) }{ \delta v_{\rm{KS}} (\vec{r}_1 ,t_1) } ( \frac{ \delta v_{\rm{ext}} (\vec{r}_1,t_1) }{ \delta v_{\rm{ext}} (\vec{r}' ,t') } + \frac{ \delta v_{\rm{H}} (\vec{r}_1,t_1) }{ \delta v_{\rm{ext}} (\vec{r}' ,t') } + \frac{ \delta v_{\rm{xc}} (\vec{r}_1,t_1) }{ \delta v_{\rm{ext}} (\vec{r}' ,t') } ) ,\\
+& = \chi_{\rm{KS}} (\vec{r}t, \vec{r}'t') + \int \rm{d} t_1 \int \rm{d} t_2 \int \rm{d} r_1 \int \rm{d} r_2 ( \frac{ \delta v_{\rm{H}} (\vec{r}_1 , t_1) }{ \delta n_1 (\vec{r}_2, t_2) } \frac{ n_1 (\vec{r}_2 , t_2 ) }{ \delta v_{\rm{ext}} (\vec{r}', t') } + \frac{ \delta v_{\rm{xc}} (\vec{r}_1 , t_1) }{ \delta n_1 (\vec{r}_2, t_2) } \frac{ n_1 (\vec{r}_2 , t_2 ) }{ \delta v_{\rm{ext}} (\vec{r}', t') } ) ,\\
+& = \chi_{\rm{KS}} (\vec{r}t, \vec{r}'t') + \int \rm{d} t_1 \int \rm{d} t_2 \int \rm{d} r_1 \int \rm{d} r_2 ( \frac{ \delta (t_1 - t_2) }{ | r_1 - r_2 | } + f_{\rm{xc}} (\vec{r}_1 t_1, \vec{r}_2 t_2) ) \chi (\vec{r}_2 t_2, \vec{r}' t') ,\\
+\end{aligned}
+$$
 
 #### Excitation energies and oscillator strength
 
