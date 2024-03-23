@@ -12,6 +12,57 @@ toc:
   sidebar: left
 ---
 
+# Interaction picture
+
+$$
+\begin{aligned}
+& \psi^I (t) = e^{i H_0 t} \psi^S (t), \\
+& \hat{O}^I (t) = e^{i H_0 t} \hat{O}^S e^{-i H_0 t}, \\
+\end{aligned}
+$$
+
+And 
+
+$$
+\begin{aligned}
+i \frac{\partial}{\partial t} \psi^I (t) & = H^I \psi^I (t), \\
+i \frac{\partial}{\partial t} \hat{O}^I (t) & = [ \hat{O}^I (t), H_0], \\
+\end{aligned}
+$$
+
+And the time-evolution operator in the interaction picture is:
+
+$$
+\begin{aligned}
+U (t, t_0) \Psi^I (t_0) & = \Psi^I (t) ,\\
+i \frac{\partial}{\partial t} U (t, t_0) & = H^I (t) U (t, t_0), \\
+\end{aligned}
+$$
+
+Where $$\Psi^I (t_0)$$ could be viewed as the wavefunction in Heisenberg picture. And in Schrödinger picture, it turns to:
+
+$$
+\Psi^S (t) = e^{-i H_0 t} U(t, t_0) \Psi^H,
+$$
+
+By solving the equation of motion, we get $$ U = \hat{T} \exp (- i \int_{t_0}^t \rm{d} t' H_1^I (t')) $$, where $$ \hat{T} $$ is the time-ordering operator.
+
+$$
+\begin{aligned}
+& \hat{T} [a_1(t_1) a_2 (t_2) \cdots a_n(t_n) ] = \sum_{P \rightarrow \alpha \beta \cdots \zeta} a_{\alpha} (t_{\alpha}) a_{\beta} (t_{\beta}) \cdots a_{\zeta} (t_{\zeta}), \quad \rm{for} \ t_{\alpha} \geq t_{\beta} \cdots \geq t_{\zeta} ,\\
+& \int_{t_0}^t \rm{d} t_1 \int_{t_0}^t \rm{d} t_2 \cdots \int_{t_0}^t \rm{d} t_n \hat{T} [H_1^I (t_1) H_1^I (t_2) \cdots H_1^I (t_n)] = n! \int_{t_0}^t \rm{d} t_1 \int_{t_0}^{t_1} \rm{d} t_2 \cdots \int_{t_0}^{t_{n-1}} \rm{d} t_n H_1^I (t_1) H_1^I (t_2) \cdots H_1^I (t_n), \\
+\end{aligned}
+$$
+
+And wick theorem could be used to simplify the calculation of the expectation value of the time-ordered operator in vacuum state:
+
+$$
+\hat{T} [a_1(t_1) a_2 (t_2) \cdots a_n(t_n) ] = \hat{N} [a_1(t_1) a_2 (t_2) \cdots a_n(t_n) ] + \rm{all \ possible \ contractions}
+$$
+$$
+\langle 0 | \hat{T} [a_1(t_1) a_2 (t_2) \cdots a_n(t_n) ] | 0 \rangle  = \langle 0 | \rm{all \ possible \ contractions} | 0 \rangle
+$$
+
 # Linear response theory
 
 The first order perturbation theory for operator $$\hat{O} (t)$$ could be written as:
@@ -42,7 +93,7 @@ $$ \Psi'(t) = e^{-i H_0 (t-t_0)} \Psi(t_0) - i e^{-i H_0 (t-t_0)} \int_{t_0}^t \
 
 Here $$t_0$$ is the time when the perturbation is added, and we could take $$t_0 = 0$$.
 
-Then for an abitrary operator $$\hat{O}$$, the expectation value of the operator in the perturbed system is:
+Then for an arbitrary operator $$\hat{O}$$, the expectation value of the operator in the perturbed system is:
 
 $$
 \begin{aligned}
@@ -52,7 +103,7 @@ $$
 \end{aligned} 
 $$
 
-Where the subscript $$0$$ means the expectation value in the unperturbed system, i.e. the expection value of wavefunction $$ \Psi(0) $$. Then the first-ordered response to the external perturbation is:
+Where the subscript $$0$$ means the expectation value in the unperturbed system, i.e. the expected value of wavefunction $$ \Psi(0) $$. Then the first-ordered response to the external perturbation is:
 
 $$
 \begin{aligned}
@@ -70,4 +121,12 @@ $$
 \end{aligned}
 $$
 
-**The integration of time starts from $$t_0$$, and the Interaction picture is the same as the Heisenberg picture with no external pertubation.**
+**The integration of time starts from $$t_0$$, and the Interaction picture is the same as the Heisenberg picture with no external perturbation.**
+
+# Higher-order response
+
+## Second-order response
+
+$$
+\delta^2 \langle O(t) \rangle = - \sum_P \theta (t - t') \theta (t' - t'') \langle [[O(t), H_1^I (t')], H_1^I (t'') ] \rangle_0
+$$
