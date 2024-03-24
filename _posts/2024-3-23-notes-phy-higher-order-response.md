@@ -73,5 +73,57 @@ $$
 $$
 \begin{aligned}
 e^A B e^{-A} & = B + [A, B] + \frac{1}{2!} [A, [A, B]] + \frac{1}{3!} [A, [A, [A, B]]] + \cdots , \\
+e^{-A} B e^{A} & = B - [A, B] + \frac{1}{2!} [A, [A, B]] - \frac{1}{3!} [A, [A, [A, B]]] + \cdots , \\
+& = B + [B,A] + \frac{1}{2!} [[B,A],A] + \frac{1}{3!} [[[B,A],A],A] + \cdots ,\\
 \end{aligned}
 $$
+
+Consider a fucntion of x: 
+
+$$ F(x) = e^{Ax} Bx e^{-Ax}, $$
+
+$$
+\begin{aligned}
+\frac{\partial }{\partial x} \{ F(x) \} & = [A, F(x)], \ \frac{\partial^n }{\partial x^n} \{ F(x) \} & = [A, \cdots [A, F(x)]], \\
+\end{aligned}
+$$
+
+And the more general form of BCH formula is:
+
+$$
+e^A e^B = \exp (A + B + \frac{1}{2} [A,B] + \frac{1}{12} [A,[A,B]] + \frac{1}{12} [B,[B,A]] + \cdots )
+$$
+
+Considering $$G(x)$$, satisfying $$e^{Ax} e^{Bx} = e^{G(x)}$$, and the operator $$\frac{\partial}{\partial x}$$ could be viewed as a single body operator, and satisfy the relationship $$ \frac{\partial}{\partial x} \rightarrow 0, \ F(A) \frac{\partial}{\partial x} \rightarrow 0 $$, because only A contains the parameter x. That is, $$ [A(x), \frac{\partial}{\partial x}] F(A) = (A \frac{\partial}{\partial x} - \frac{\partial}{\partial x} A ) F(A) = - (\frac{\partial}{\partial x} A(x)) F(x)$$, then we have:
+$$
+\begin{aligned}
+e^{G(x)} \frac{\partial}{\partial x} e^{-G(x)} & = - G'(x) - \frac{1}{2!} [G(x), G'(x)] - \frac{1}{3!} [G(x), [G(x), G'(x)]] - \cdots , \\
+e^{- G(x)} \frac{\partial}{\partial x} e^{ G(x)} & = G'(x) + \frac{1}{2!} [G'(x), G(x)] + \frac{1}{3!} [[G'(x), G(x)],G(x)] + \cdots , \\
+\end{aligned}
+$$
+
+And 
+$$
+\begin{aligned}
+e^{-Bx}e^{-Ax} \frac{\partial}{\partial x} \{ e^{Ax} e^{Bx} \} & = e^{-Bx} A e^{Bx} + B ,\\
+& = B + x [A,B] + \frac{x^2}{2!} [[A,B],B] + \frac{x^3}{3!} [[[A,B],B],B] + \cdots ,\\
+\end{aligned}
+$$
+
+And by using the Taylor expansion of $$G(x)$$, we know:
+
+$$
+\begin{aligned}
+& G(x) = G_1 x + G_2 x^2 + G_3 x^3, \ G_0 = 0,\\
+& G'(x) = G_1 + 2! \times G_2 x + 3! \times G_3 x^2 + \cdots ,\\
+\end{aligned}
+$$
+
+Then:
+$$
+\begin{aligned}
+e^{- G(x)} \frac{\partial}{\partial x} e^{ G(x)} & = G'(x) + \frac{1}{2!} [G'(x), G(x)] + \frac{1}{3!} [[G'(x), G(x)],G(x)] + \cdots , \\
+& = G_1 + 2x G_2 + x^2 (3G_3 - \frac{1}{2}[G_1,G_2]) + \cdots,\\
+\end{aligned}
+$$
+
