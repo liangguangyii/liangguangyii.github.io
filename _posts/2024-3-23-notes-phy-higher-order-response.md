@@ -12,6 +12,39 @@ toc:
   sidebar: left
 ---
 
+# Convolution
+
+$$
+\begin{aligned}
+(f*g)(t) & = \int_{-\infty}^{\infty} \rm{d} \tau f(t-\tau) g(\tau) ,\\
+
+(f*g)(t) & \leftrightarrow F(\omega) G(\omega) ,\\
+\end{aligned}
+$$
+
+Here is the proof:
+
+For the transformation from time domain to frequency domain:
+
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty} \rm{d} t e^{i \omega t} (f*g)(t) & = \int_{-\infty}^{\infty} \rm{d} t e^{i \omega t} \int_{-\infty}^{\infty} \rm{d} \tau f(t-\tau) g(\tau) ,\\
+& = \int_{-\infty}^{\infty} \rm{d} t \int_{-\infty}^{\infty} \rm{d} \tau e^{i \omega (t - \tau)} e^{i \omega \tau} f(t - \tau) g(\tau) ,\\
+& = \int_{-\infty}^{\infty} \rm{d} t_1 \int_{-\infty}^{\infty} \rm{d} t_2 e^{i \omega t_1} e^{i \omega t_2} f(t_1) g(t_2) ,\\
+\end{aligned}
+$$
+
+Where we have used the Jacobian transformation $$ t_1 = t -\tau, \ t_2= \tau, \ \frac{\partial (t_1, t_2) }{\partial (t, \tau) } = 1 $$.
+
+For the transformation from frequency domain to time domain:
+
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty} \rm{d} \omega e^{-i \omega t} F(\omega) G(\omega) & = \int_{-\infty}^{\infty} \rm{d} \omega \int_{-\infty}^{\infty} \rm{d} \tau e^{-i \omega t} e^{i \omega \tau} F(\omega) g(\tau) ,\\
+\end{aligned}
+$$
+
+
 # Interaction picture
 
 $$
