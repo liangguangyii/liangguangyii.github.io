@@ -103,6 +103,7 @@ e^{- G(x)} \frac{\partial}{\partial x} e^{ G(x)} & = G'(x) + \frac{1}{2!} [G'(x)
 $$
 
 And 
+
 $$
 \begin{aligned}
 e^{-Bx}e^{-Ax} \frac{\partial}{\partial x} \{ e^{Ax} e^{Bx} \} & = e^{-Bx} A e^{Bx} + B ,\\
@@ -120,6 +121,7 @@ $$
 $$
 
 Then:
+
 $$
 \begin{aligned}
 e^{- G(x)} \frac{\partial}{\partial x} e^{ G(x)} & = G'(x) + \frac{1}{2!} [G'(x), G(x)] + \frac{1}{3!} [[G'(x), G(x)],G(x)] + \cdots , \\
@@ -127,3 +129,11 @@ e^{- G(x)} \frac{\partial}{\partial x} e^{ G(x)} & = G'(x) + \frac{1}{2!} [G'(x)
 \end{aligned}
 $$
 
+## Response function
+
+$$
+\begin{aligned}
+\langle O(t) \rangle & = \langle U^{\dagger} (t,t_0) O^I(t) U(t,t_0) \rangle_0 ,\\
+& = \langle \{ \hat{T} \exp (i \int_{t_0}^t \rm{d} t' H_1^I (t') ) \} O^I(t) \{ \hat{T} \exp (-i \int_{t_0}^t \rm{d} t' H_1^I (t') ) \} \rangle_0 ,\\
+\end{aligned}
+$$
