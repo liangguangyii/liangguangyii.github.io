@@ -66,7 +66,7 @@ Contraction coefficients                   R   N=          26
   1.00000000E+00  3.34946043E-02  2.34726953E-01  8.13757326E-01  1.00000000E+00
   1.00000000E+00
 ```
-For SP shell(`-1` in Shell types), we only take the coefficients of the last three in `P(S=P) Contraction coefficients`, i.e. the P type Shell instead using the coefficients in `Contraction coefficients`.
+For SP shell(`-1` in Shell types), we only take the coefficients of the last three basis gtfs in `P(S=P) Contraction coefficients`, i.e. the P type Shells of sp shell are using the coefficients in `P(S=P) Contraction coefficients`.
 
 ```fortran
 if ( shl_type(ishl) == -1 .and. ibsshl /= 1 ) then
