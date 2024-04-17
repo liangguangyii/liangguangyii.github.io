@@ -110,3 +110,5 @@ nav_order: 1
     - [ ] [DIM/QM method and dressed tensor method](https://pubs.acs.org/doi/10.1021/acs.jctc.6b00940)
     - [ ] [DIM/QM method in metal cluster](https://pubs.aip.org/aip/jcp/article/133/7/074103/189240/A-discrete-interaction-model-quantum-mechanical)
     - [ ] [N-terms and K-terms in SOS method](https://opg.optica.org/josab/fulltext.cfm?uri=josab-33-4-780&id=338584)
+
+- [ ] [w tuning long-range correction functionals](http://sobereva.com/346)
