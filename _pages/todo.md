@@ -112,3 +112,5 @@ nav_order: 1
     - [ ] [N-terms and K-terms in SOS method](https://opg.optica.org/josab/fulltext.cfm?uri=josab-33-4-780&id=338584)
 
 - [ ] [w tuning long-range correction functionals](http://sobereva.com/346)
+
+- Read the book "Quantum Theory of Radiation"
