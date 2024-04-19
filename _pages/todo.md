@@ -113,4 +113,6 @@ nav_order: 1
 
 - [ ] [w tuning long-range correction functionals](http://sobereva.com/346)
 
-- Read the book "Quantum Theory of Radiation"
+- [ ] Read the book "Quantum Theory of Radiation"
+
+- [ ] Hyper Ramnathan effect and NLO.
