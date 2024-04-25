@@ -116,3 +116,5 @@ nav_order: 1
 - [ ] Read the book "Quantum Theory of Radiation"
 
 - [ ] Hyper Ramnathan effect and NLO.
+
+- [ ] vibrational dynamic dipole polarizabilities and hyperpolarizabilities. J. Chem. Phys., 108,10013(1998) and D.M. Bishop, Molecular vibration and nonlinear optics,Adv. Chem. Phys., 104, 1-40(1998)
