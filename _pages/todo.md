@@ -118,3 +118,7 @@ nav_order: 1
 - [ ] Hyper Ramnathan effect and NLO.
 
 - [ ] vibrational dynamic dipole polarizabilities and hyperpolarizabilities. J. Chem. Phys., 108,10013(1998) and D.M. Bishop, Molecular vibration and nonlinear optics,Adv. Chem. Phys., 104, 1-40(1998)
+
+- [ ] tuned range-separated functional
+    - [ ] Why all examples are neutral? How about the charged cluster?
+    - [ ] More orbitals (not only HOMO-LUMO) should be tuned in transition metals, maybe by TDDFT we could choose some important orbitals to tune.
