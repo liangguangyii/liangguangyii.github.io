@@ -122,3 +122,6 @@ nav_order: 1
 - [ ] tuned range-separated functional
     - [ ] Why all examples are neutral? How about the charged cluster?
     - [ ] More orbitals (not only HOMO-LUMO) should be tuned in transition metals, maybe by TDDFT we could choose some important orbitals to tune.
+    - [ ] There are two ways to prove the resulted are reliable:
+        - [ ] Compare the static hyperpolarization tensor for tuned LC-wPBE and MP2, cause MP2 lack out analytical derivative higher than 2-order.
+        - [ ] Compare the result of LC-wPBE with experimental data of some small transition cluster.
