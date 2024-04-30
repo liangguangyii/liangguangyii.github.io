@@ -126,3 +126,5 @@ nav_order: 1
         - [ ] Compare the static hyperpolarization tensor for tuned LC-wPBE and MP2, cause MP2 lack out analytical derivative higher than 2-order.
         - [ ] Compare the result of LC-wPBE with experimental data of some small transition cluster.
         - [ ] Or use LC-PBE0 (with two parameter $$\alpha$$ and $$\beta$$), to optimize.
+    - [ ] for Au4(2e), with CCSD as reference, I find CAM-B3lyp is much better than tuned LC-wPBE, though Gaussian doesn't support the 3-order analytic derivative of LC-wPBE. So maybe we could tune CAM-B3LYP?
+    - [ ] MP2 is worse in Au4(2e).
