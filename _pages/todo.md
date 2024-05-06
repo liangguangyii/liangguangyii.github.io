@@ -131,3 +131,4 @@ nav_order: 1
     - [ ] MP2 is worse in Au4(2e).
     - [ ] wb97x! and we don't need DFT-D3, because it's vertical excitation energy, not the adiabatic excitation energy. It has similar performance with CAM-B3LYP, when no tuning. And it also has the 3-order analytic derivative.
     - [ ] CCSD and CCSD(T) is NOT the golden standard for the case when static correlation is important, try to use FCI or CASSCF.
+    - [ ] Is it necessary to use [fragment scf initial guess](http://sobereva.com/82) for the transition metal cluster? And how to choose the fragment?
