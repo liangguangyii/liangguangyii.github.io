@@ -127,8 +127,10 @@ nav_order: 1
         - [ ] Compare the result of LC-wPBE with experimental data of some small transition cluster.
         - [ ] Or use LC-PBE0 (with two parameter $$\alpha$$ and $$\beta$$), to optimize.
     - [ ] for Au4(2e), with CCSD as reference, I find CAM-B3lyp is much better than tuned LC-wPBE, though Gaussian doesn't support the 3-order analytic derivative of LC-wPBE. So maybe we could tune CAM-B3LYP?
-        - [ ] For CAM-B3LYP, which is different form other functional, which does not contain 100% HF exchange terms in far distance, that makes the result of beta close to CCSD (That also works for LC-PBE0 if I turn HF proportion of far distance less than 1). However, it performs worse in J2 J fucntion.
+        - [x] For CAM-B3LYP, which is different form other functional, which does not contain 100% HF exchange terms in far distance, that makes the result of beta close to CCSD (That also works for LC-PBE0 if I turn HF proportion of far distance less than 1). However, it performs worse in J2 J fucntion.
     - [ ] MP2 is worse in Au4(2e).
-    - [ ] wb97x! and we don't need DFT-D3, because it's vertical excitation energy, not the adiabatic excitation energy. It has similar performance with CAM-B3LYP, when no tuning. And it also has the 3-order analytic derivative.
+    - [x] wb97x! and we don't need DFT-D3, because it's vertical excitation energy, not the adiabatic excitation energy. It has similar performance with CAM-B3LYP, when no tuning. And it also has the 3-order analytic derivative.
     - [ ] CCSD and CCSD(T) is NOT the golden standard for the case when static correlation is important, try to use FCI or CASSCF.
     - [ ] Is it necessary to use [fragment scf initial guess](http://sobereva.com/82) for the transition metal cluster? And how to choose the fragment?
+    - [ ] Find some works about the Non Linear Optical properties of transition metal cluster, especially for the hyperpolarizability.
+    - [ ] Only in the region around equilibrium could we use the single dominant configuration, other times we should use the multi-configuration. So as to the calculation of hyperpolarizability.
