@@ -131,6 +131,7 @@ nav_order: 1
     - [ ] MP2 is worse in Au4(2e).
     - [x] wb97x! and we don't need DFT-D3, because it's vertical excitation energy, not the adiabatic excitation energy. It has similar performance with CAM-B3LYP, when no tuning. And it also has the 3-order analytic derivative.
     - [ ] CCSD and CCSD(T) is NOT the golden standard for the case when static correlation is important, try to use FCI or CASSCF.
-    - [ ] Is it necessary to use [fragment scf initial guess](http://sobereva.com/82) for the transition metal cluster? And how to choose the fragment?
+    - [x] Is it necessary to use [fragment scf initial guess](http://sobereva.com/82) for the transition metal cluster? And how to choose the fragment? **No, because fragment inital guess could only set the integer spin, however in transition metal cluster, it's more complex.**
     - [ ] Find some works about the Non Linear Optical properties of transition metal cluster, especially for the hyperpolarizability.
     - [ ] Only in the region around equilibrium could we use the single dominant configuration, other times we should use the multi-configuration. So as to the calculation of hyperpolarizability.
+    - [ ] I have calculated the density matrix of CCSD, so maybe I could use it to evaluate the degree of static correlation in the transition metal cluster.
