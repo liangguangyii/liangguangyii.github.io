@@ -121,11 +121,11 @@ nav_order: 1
 
 - [ ] tuned range-separated functional
     - [ ] Why all examples are neutral? How about the charged cluster?
-    - [ ] More orbitals (not only HOMO-LUMO) should be tuned in transition metals, maybe by TDDFT we could choose some important orbitals to tune.
+    - [x] More orbitals (not only HOMO-LUMO) should be tuned in transition metals, maybe by TDDFT we could choose some important orbitals to tune.**Though I still don't know the rules to choose these orbits.**
     - [ ] There are three ways to prove the resulted are reliable:
         - [ ] Compare the static hyperpolarization tensor for tuned LC-wPBE and MP2, cause MP2 lack out analytical derivative higher than 2-order.
-        - [ ] Compare the result of LC-wPBE with experimental data of some small transition cluster.
-        - [ ] Or use LC-PBE0 (with two parameter $$\alpha$$ and $$\beta$$), to optimize.
+        - [x] Compare the result of LC-wPBE with experimental data of some small transition cluster.**LC-wPBE does not has the 3-order analytical derivative in Gaussian. So we could not calculate the dynamic hyperpolarization.**
+        - [x] Or use LC-PBE0 (with two parameter $$\alpha$$ and $$\beta$$), to optimize.
     - [ ] for Au4(2e), with CCSD as reference, I find CAM-B3lyp is much better than tuned LC-wPBE, though Gaussian doesn't support the 3-order analytic derivative of LC-wPBE. So maybe we could tune CAM-B3LYP?
         - [x] For CAM-B3LYP, which is different form other functional, which does not contain 100% HF exchange terms in far distance, that makes the result of beta close to CCSD (That also works for LC-PBE0 if I turn HF proportion of far distance less than 1). However, it performs worse in J2 J fucntion.
     - [ ] MP2 is worse in Au4(2e).
