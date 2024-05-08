@@ -126,12 +126,15 @@ nav_order: 1
         - [ ] Compare the static hyperpolarization tensor for tuned LC-wPBE and MP2, cause MP2 lack out analytical derivative higher than 2-order.
         - [x] Compare the result of LC-wPBE with experimental data of some small transition cluster.**LC-wPBE does not has the 3-order analytical derivative in Gaussian. So we could not calculate the dynamic hyperpolarization.**
         - [x] Or use LC-PBE0 (with two parameter $$\alpha$$ and $$\beta$$), to optimize.
-    - [ ] for Au4(2e), with CCSD as reference, I find CAM-B3lyp is much better than tuned LC-wPBE, though Gaussian doesn't support the 3-order analytic derivative of LC-wPBE. So maybe we could tune CAM-B3LYP?
+    - [x] for Au4(2e), with CCSD as reference, I find CAM-B3lyp is much better than tuned LC-wPBE, though Gaussian doesn't support the 3-order analytic derivative of LC-wPBE. So maybe we could tune CAM-B3LYP?**Au4(2e) dose not have obvious dipole as the result of its high symmetry, so beta|| is meaningless, try to use other small cluster with lower symmetry.**
         - [x] For CAM-B3LYP, which is different form other functional, which does not contain 100% HF exchange terms in far distance, that makes the result of beta close to CCSD (That also works for LC-PBE0 if I turn HF proportion of far distance less than 1). However, it performs worse in J2 J fucntion.
-    - [ ] MP2 is worse in Au4(2e).
+    - [x] MP2 is worse in Au4(2e).
     - [x] wb97x! and we don't need DFT-D3, because it's vertical excitation energy, not the adiabatic excitation energy. It has similar performance with CAM-B3LYP, when no tuning. And it also has the 3-order analytic derivative.
     - [ ] CCSD and CCSD(T) is NOT the golden standard for the case when static correlation is important, try to use FCI or CASSCF.
     - [x] Is it necessary to use [fragment scf initial guess](http://sobereva.com/82) for the transition metal cluster? And how to choose the fragment? **No, because fragment inital guess could only set the integer spin, however in transition metal cluster, it's more complex.**
     - [ ] Find some works about the Non Linear Optical properties of transition metal cluster, especially for the hyperpolarizability.
     - [ ] Only in the region around equilibrium could we use the single dominant configuration, other times we should use the multi-configuration. So as to the calculation of hyperpolarizability.
-    - [ ] I have calculated the density matrix of CCSD, so maybe I could use it to evaluate the degree of static correlation in the transition metal cluster.
+    - [x] I have calculated the density matrix of CCSD, so maybe I could use it to evaluate the degree of static correlation in the transition metal cluster. **T1 diag has finished, 0.05>0.02, I am trying to use Full electron CCSD.**
+    - [ ] For system with high static correlation, we should use functional with lower HF proportion. (wb97xd is too high - 1.22036 in short range and 0.777964 in long range, try to use wb97x - about 0.15 in short range.)
+
+    - [ ] Superatoms all have degenerate HOMO-LUMO orbits, should we use Multireference method to calculate them instead? (by performing a correlation analysis of T1 D1 %TAE(T) with C0 -> the golden rule, as see in 0.1021/acs.jctc.5b00861).
