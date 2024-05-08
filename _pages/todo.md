@@ -136,5 +136,7 @@ nav_order: 1
     - [ ] Only in the region around equilibrium could we use the single dominant configuration, other times we should use the multi-configuration. So as to the calculation of hyperpolarizability.
     - [x] I have calculated the density matrix of CCSD, so maybe I could use it to evaluate the degree of static correlation in the transition metal cluster. **T1 diag has finished, 0.05>0.02, I am trying to use Full electron CCSD.**
     - [ ] For system with high static correlation, we should use functional with lower HF proportion. (wb97xd is too high - 1.22036 in short range and 0.777964 in long range, try to use wb97x - about 0.15 in short range.)
+        - [ ] Maybe we could try to use pure DFT functional, like PBE, r2SCAN, TPSS, MN15L.
+        - [ ] And Dose these functional have range-separated form? Now I have already known that there exist LC-TPSS.
 
     - [ ] Superatoms all have degenerate HOMO-LUMO orbits, should we use Multireference method to calculate them instead? (by performing a correlation analysis of T1 D1 %TAE(T) with C0 -> the golden rule, as see in 0.1021/acs.jctc.5b00861).
