@@ -120,7 +120,7 @@ nav_order: 1
 - [ ] vibrational dynamic dipole polarizabilities and hyperpolarizabilities. J. Chem. Phys., 108,10013(1998) and D.M. Bishop, Molecular vibration and nonlinear optics,Adv. Chem. Phys., 104, 1-40(1998)
 
 - [ ] tuned range-separated functional
-    - [ ] Why all examples are neutral? How about the charged cluster?
+    - [x] Why all examples are neutral? How about the charged cluster?
     - [x] More orbitals (not only HOMO-LUMO) should be tuned in transition metals, maybe by TDDFT we could choose some important orbitals to tune.**Though I still don't know the rules to choose these orbits.**
     - [ ] There are three ways to prove the resulted are reliable:
         - [ ] Compare the static hyperpolarization tensor for tuned LC-wPBE and MP2, cause MP2 lack out analytical derivative higher than 2-order.
@@ -138,5 +138,6 @@ nav_order: 1
     - [ ] For system with high static correlation, we should use functional with lower HF proportion. (wb97xd is too high - 1.22036 in short range and 0.777964 in long range, try to use wb97x - about 0.15 in short range.)
         - [ ] Maybe we could try to use pure DFT functional, like PBE, r2SCAN, TPSS, MN15L.
         - [ ] And Dose these functional have range-separated form? Now I have already known that there exist LC-TPSS.
+    - [ ] The functional with higher HF proportion performs well in untuned case, compared with CCSD result. However, it may be the error cancellation, maybe they perform worse in **dynamic hyperpolarization.**
 
     - [ ] Superatoms all have degenerate HOMO-LUMO orbits, should we use Multireference method to calculate them instead? (by performing a correlation analysis of T1 D1 %TAE(T) with C0 -> the golden rule, as see in 0.1021/acs.jctc.5b00861).
