@@ -291,3 +291,35 @@ Furthermore, we could use `stable=opt` to optimize the wave function, which is u
 ### Spin-Polarized state/Symmetry-Broken state
 
 Spin-Polarized state is the state with the broken spin symmetry, though it's the state with closed shell, the alpha and beta electrons are not equal, i.e. there is difference between the distribution of those two electrons. However, the default guess of Gaussian is the restricted closed shell wave function, which is often not good enough. Seen in [Tian Lu' Blog](http://sobereva.com/82), `stable=opt` is also used to fix the problem of the initial wave function.
+
+## Some IOp format
+
+`IOp(3/130)`
+
+Coefficient of full range of HF exchange.
+
+```
+-1	0 full range coefficient.
+0	Standard full range HF exchange.
+NNNNN	NNNNN/10000 full range coefficient.
+100000	Use the negative of the short range coefficient as set by IOp(3/119).
+200000	Set the short range coefficient to zero.
+1000000	Use the negative of the long range coefficient as set by IOp(3/119).
+2000000	Set the long range coefficient to zero.
+10000000	Use the negative of the mid range coefficient as set by IOp(138).
+20000000	Set the mid range coefficient to zero.
+```
+
+`IOp(3/131)`
+
+Coefficient of full range of DFT exchange.
+
+```
+-1	0 full range coefficient.
+0	Standard full range DFT exchange.
+NNNNN	NNNNN/10000 full range coefficient.
+100000	Use the negative of the short range coefficient as set by IOp(3/120).
+200000	Set the short range coefficient to zero.
+1000000	Use the negative of the long range coefficient as set by IOp(3/120).
+2000000	Set the long range coefficient to zero.
+```
