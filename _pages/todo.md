@@ -139,5 +139,6 @@ nav_order: 1
         - [ ] Maybe we could try to use pure DFT functional, like PBE, r2SCAN, TPSS, MN15L.
         - [ ] And Dose these functional have range-separated form? Now I have already known that there exist LC-TPSS.
     - [ ] The functional with higher HF proportion performs well in untuned case, compared with CCSD result. However, it may be the error cancellation, maybe they perform worse in **dynamic hyperpolarization.**
+    - [ ] All spin multiplicity of the cluster is calculated in CCSD level, to let the fine tuning result more close to the CCSD result.
 
     - [ ] Superatoms all have degenerate HOMO-LUMO orbits, should we use Multireference method to calculate them instead? (by performing a correlation analysis of T1 D1 %TAE(T) with C0 -> the golden rule, as see in 0.1021/acs.jctc.5b00861).
