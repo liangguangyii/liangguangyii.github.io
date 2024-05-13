@@ -141,4 +141,8 @@ nav_order: 1
     - [ ] The functional with higher HF proportion performs well in untuned case, compared with CCSD result. However, it may be the error cancellation, maybe they perform worse in **dynamic hyperpolarization.**
     - [ ] All spin multiplicity of the cluster is calculated in CCSD level, to let the fine tuning result more close to the CCSD result.
 
+    - [ ] Try CAM-B3LYP, CAM-B3LYP* and LC-TPss, LC-TPssh.
+        - [ ] LC-TPSSh, where https://doi.org/10.1016/j.theochem.2009.01.018 suggests that the HF proportion should be smaller than 10% in Ni2O2.
+        - [ ] Use TPSS2TPSS defined in https://doi.org/10.1016/j.theochem.2009.01.018, because HF proportion of TPSSh is too high that even if I tuned w the dynamic hyperpolarization is still bad.
+
     - [ ] Superatoms all have degenerate HOMO-LUMO orbits, should we use Multireference method to calculate them instead? (by performing a correlation analysis of T1 D1 %TAE(T) with C0 -> the golden rule, as see in 0.1021/acs.jctc.5b00861).
