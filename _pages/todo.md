@@ -146,3 +146,6 @@ nav_order: 1
         - [ ] Use TPSS2TPSS defined in https://doi.org/10.1016/j.theochem.2009.01.018, because HF proportion of TPSSh is too high that even if I tuned w the dynamic hyperpolarization is still bad.
 
     - [ ] Superatoms all have degenerate HOMO-LUMO orbits, should we use Multireference method to calculate them instead? (by performing a correlation analysis of T1 D1 %TAE(T) with C0 -> the golden rule, as see in 0.1021/acs.jctc.5b00861).
+
+    - [ ] DR < 1.5 $$\rightarrow$$ Warning? read the relative paper about the limit of DR and dipole. [Reference molecules for nonlinear optics: A joint
+experimental and theoretical investigation], actually, it reports the case that DR < 1.5.
