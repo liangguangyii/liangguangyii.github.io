@@ -25,3 +25,8 @@ dft
 NWChem will search the keyword "Au_def2-TZVPD" or "V_def2-TZVPD" in the file `def2-tzvpd` in the path `/home/phys/liangguangyi/opt/NWChem/src/nwchem-7.2.2/src/basis/libraries.bse/`.
 
 And DO REMEMBER to add ECP for ECP basis set.
+
+## beyond HF method
+
+
+NWChem could change the initial guess for beyond HF method by setting the keyword `scf` or `dft` before the method keyword. 
