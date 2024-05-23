@@ -149,3 +149,6 @@ nav_order: 1
 
     - [ ] DR < 1.5 $$\rightarrow$$ Warning? read the relative paper about the limit of DR and dipole. [Reference molecules for nonlinear optics: A joint
 experimental and theoretical investigation], actually, it reports the case that DR < 1.5.
+
+
+- [ ] CHECK THE PAPERS ABOUT PBE20
