@@ -154,4 +154,5 @@ experimental and theoretical investigation], actually, it reports the case that 
 - [ ] CHECK THE PAPERS ABOUT PBE20
 
 - [ ] NLO are based on hyper Rayleigh scattering(Double-Quantum Light Scattering by Molecules), and its depolarization ratio is larger than in Raman scattering case(though the limits differ for different symmetry).
-    - [ ] In Raman scattering, an oscillating dipole cannot scatter light along the same axis as itself.(Fundamentals of Raman  Polarization Microscopy) Then $$\rho \in [0,3/4]$$.
+    - [ ] In Raman scattering, an oscillating dipole cannot scatter light along the same axis as itself.(Fundamentals of Raman Polarization Microscopy) Then $$\rho \in [0,3/4]$$.
+    - [ ] There are so many excitation peaks in V@Au9Pt4, Raman scattering may occur.
