@@ -62,15 +62,15 @@ $$
 
 The definition of these two potentials has already satisfied the first and the fourth Maxwell-Lorentz equations. The second and the third equations could be rewritten as:
 
-
+$$
 \begin{equation}
 \begin{aligned}
 -\nabla^2 \phi - \frac{1}{c^2} \nabla \cdot \dot{\vec{A}} & = 4 \pi \rho, \\
 \frac{1}{c^2} \ddot{\vec{A}} - \nabla^2 \vec{A} + \nabla(\nabla \cdot \vec{A} + \frac{1}{c} \dot{\phi}) & = \frac{4 \pi}{c} \rho \vec{v}, \\
-\label{eq:modified-maxwell-lorentz}
 \end{aligned}
+\label{eq:modified-maxwell-lorentz}
 \end{equation}
-
+$$
 
 ## Gauge Transformation
 
@@ -90,4 +90,4 @@ $$
 
 ## Retarded Potentials
 
-In Lorentz gauge, \eqref{eq:modified-maxwell-lorentz} could be rewritten as:
+In Lorentz gauge, Equation \eqref{eq:modified-maxwell-lorentz} could be rewritten as:
