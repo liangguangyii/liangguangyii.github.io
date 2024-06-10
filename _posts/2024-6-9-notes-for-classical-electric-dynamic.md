@@ -169,13 +169,13 @@ $$
 \end{equation}
 $$
 
-Again, use Equation \eqref{eq:maxwell-lorentz} to diminish the "dot" terms:
+Again, use Equation \eqref{eq:maxwell-lorentz} to diminish the "dot" terms, still, we don't need $$\rho$$ and $$\rho \vec{v}$$ terms, and, the choice left for us is only the first relationship in Equation \eqref{eq:maxwell-lorentz}, multiply it with $$\vec{E}$$ and $$\vec{H}$$ respectively:
 
 $$
 \begin{equation}
 \begin{aligned}
-\vec{E} \times (\nabla \times \vec{E}) + \frac{1}{c} \vec{E} \times \dot{\vec{H}} & = \vec{E} \times (\nabla \times \vec{H}) + \frac{1}{c} \frac{\rm{d} }{ \rm{d} t} (\vec{E} \times \vec{H}) - \frac{1}{c} \dot{\vec{E}} \times \vec{H} = 0, \\
-\vec{H} \times (\nabla \times \vec{E}) + \frac{1}{c} \vec{H} \times \dot{\vec{H}} & = \vec{H} \times (\nabla \times \vec{E}) + \frac{1}{2c} \frac{\rm{d}}{\rm{d} t} H^2 = 0,  
+\vec{E} \times (\nabla \times \vec{E}) + \frac{1}{c} \vec{E} \times \dot{\vec{H}} & = \vec{E} \times (\nabla \times \vec{E}) + \frac{1}{c} \frac{\rm{d} }{ \rm{d} t} (\vec{E} \times \vec{H}) - \frac{1}{c} \dot{\vec{E}} \times \vec{H} = 0, \\
+\vec{H} \cdot (\nabla \times \vec{E}) + \frac{1}{c} \vec{H} \cdot \dot{\vec{H}} & = \vec{H} \cdot (\nabla \times \vec{E}) + \frac{1}{2c} \frac{\rm{d}}{\rm{d} t} H^2 = 0,  
 \end{aligned}
 \end{equation}
 $$
@@ -185,8 +185,39 @@ And we have:
 $$
 \begin{equation}
 \begin{aligned}
--\frac{1}{c} \dot{\vec{E}} \times \vec{H} & = - \vec{E} \times (\nabla \times \vec{H}) - \frac{1}{c} \frac{\rm{d}}{\rm{d} t} (\vec{E} \times \vec{H})  ,\\
-- \dot{\vec{E}} \cdot \vec{E} & = - \frac{1}{2} \frac{\rm{d}}{\rm{d} t} (E^2 + H^2) - c \vec{H} \times (\nabla \times \vec{E}),
+-\frac{1}{c} \dot{\vec{E}} \times \vec{H} & = - \vec{E} \times (\nabla \times \vec{E}) - \frac{1}{c} \frac{\rm{d}}{\rm{d} t} (\vec{E} \times \vec{H})  ,\\
+- \dot{\vec{E}} \cdot \vec{E} & = - \frac{1}{2} \frac{\rm{d}}{\rm{d} t} (E^2 + H^2) - c \vec{H} \cdot (\nabla \times \vec{E}),
+\end{aligned}
+\end{equation}
+$$
+
+Then:
+
+$$
+\begin{equation}
+\begin{aligned}
+\frac{\rm{d} \vec{u}}{\rm{d} t} & = - \frac{\rm{d} \vec{G}}{\rm{d} t} + \frac{c}{4 \pi} \int \rm{d} \tau (\vec{E} (\nabla \cdot \vec{E}) - \vec{H} \times \nabla \times \vec{H} - \vec{E} \times \nabla \times \vec{E}), \\
+\frac{\rm{d} T}{\rm{d} t} & = - \frac{\rm{d} U}{ \rm{d} t} + \frac{c}{4 \pi} \int \rm{d} \tau (\vec{E} \cdot (\nabla \times \vec{H}) - \vec{H} \cdot (\nabla \times \vec{E})),
+\end{aligned}
+\end{equation}
+$$
+
+As $$\vec{S} = \frac{c}{4 \pi} \vec{E} \times \vec{H}$$, we have:
+
+$$
+\begin{equation}
+\begin{aligned}
+\int \rm{d} \bm{\sigma} \cdot \vec{S} = \int \rm{d} \tau \nabla \cdot (\vec{E} \times \vec{H}) = \frac{c}{4 \pi} \int \rm{d} \tau \vec{H} \cdot ( \nabla \times \vec{E} ) - \vec{E} \cdot ( \nabla \times \vec{H} ), 
+\end{aligned}
+\end{equation}
+$$
+
+So that:
+$$
+\begin{equation}
+\begin{aligned}
+\frac{\rm{d} }{ \rm{d} t}(G_x + u_x) & = \int \rm{d} \sigma \cdot \vec{T}_{x},\\
+\frac{\rm{d} }{\rm{d} t} (T + U) & = \int \rm{d} \sigma \cdot \vec{S},
 \end{aligned}
 \end{equation}
 $$
