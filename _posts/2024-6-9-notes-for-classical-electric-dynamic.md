@@ -207,7 +207,7 @@ As $$\vec{S} = \frac{c}{4 \pi} \vec{E} \times \vec{H}$$, we have:
 $$
 \begin{equation}
 \begin{aligned}
-\int \rm{d} \bm{\sigma} \cdot \vec{S} = \int \rm{d} \tau \nabla \cdot (\vec{E} \times \vec{H}) = \frac{c}{4 \pi} \int \rm{d} \tau \vec{H} \cdot ( \nabla \times \vec{E} ) - \vec{E} \cdot ( \nabla \times \vec{H} ), 
+\int \rm{d} \sigma \cdot \vec{S} = \int \rm{d} \tau \nabla \cdot (\vec{E} \times \vec{H}) = \frac{c}{4 \pi} \int \rm{d} \tau \vec{H} \cdot ( \nabla \times \vec{E} ) - \vec{E} \cdot ( \nabla \times \vec{H} ), 
 \end{aligned}
 \end{equation}
 $$
