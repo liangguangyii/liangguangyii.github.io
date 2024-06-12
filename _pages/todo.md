@@ -159,3 +159,5 @@ experimental and theoretical investigation], actually, it reports the case that 
 
 - [ ] Calculate the hyper polarizability by $$Z \times \rho^{[2]}$$ by http://sobereva.com/305.
     - [ ] And separate the contribution of each atom by Fuzzy Analysis, rather than basin analysis.
+
+- [ ] AIM topological analysis of $$\rho^{[2]}$$, basin analysis is just a part of it.
