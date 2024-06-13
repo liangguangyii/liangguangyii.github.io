@@ -65,5 +65,9 @@ write(*,*) atan2(-1D0, 1D0)   !-0.7853981633974483
 write(*,*) atan(1D0)          !0.7853981633974483
 write(*,*) atan(-1D0)         !-0.7853981633974483
 ```
+### openmp in Visual Studio
 
+In Visual Studio(Windows), openmp could be enabled by setting `Project` -> `Properties` -> `Fortran` -> `Language` -> `OpenMP Support` to `Generate Parallel Code (/Qopenmp)`.
+
+And when compiling the code in Linux, the flag `-fopenmp` should be added.
  
