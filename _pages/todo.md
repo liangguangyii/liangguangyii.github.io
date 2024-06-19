@@ -161,3 +161,5 @@ experimental and theoretical investigation], actually, it reports the case that 
     - [ ] And separate the contribution of each atom by Fuzzy Analysis, rather than basin analysis.
 
 - [ ] AIM topological analysis of $$\rho^{[2]}$$, basin analysis is just a part of it.
+
+- [ ] Find some way to prove the accuracy of tuned LC-PBE0, such as the bond length of TM2, or electric field gradient of CuCl(though soc is needed).
