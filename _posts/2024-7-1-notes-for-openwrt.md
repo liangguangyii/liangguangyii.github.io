@@ -33,10 +33,12 @@ toc:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/blog/openwrt/openwrt_lan_setting1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        <div>
+            {% include figure.html path="assets/img/blog/openwrt/openwrt_lan_setting1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        </div>
+        <div class="mt-3">
+            {% include figure.html path="assets/img/blog/openwrt/openwrt_lan_setting2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        </div>
+        <div>具体lan口设置</div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/blog/openwrt/openwrt_lan_setting2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    具体lan口设置
 </div>
