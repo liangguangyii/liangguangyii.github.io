@@ -171,3 +171,4 @@ CSHIFT = [real]
 Default: CSHIFT	= OMEGAMAX*1.3 / max(NOMEGA,40)	for GW calculations
 = 0.1	for linear response calculations
 ```
+
