@@ -163,3 +163,11 @@ experimental and theoretical investigation], actually, it reports the case that 
 - [ ] AIM topological analysis of $$\rho^{[2]}$$, basin analysis is just a part of it.
 
 - [ ] Find some way to prove the accuracy of tuned LC-PBE0, such as the bond length of TM2, or electric field gradient of CuCl(though soc is needed).
+
+- [ ] `CSHIFT` in vasp, it's different in GW case and other linear reponse case, for diamond `CSHIFT=0.32` in GW0 and 0.6 in RPA and BSE, otherwise the result of RPA an BSE is quite differnt with GW0.
+```
+CSHIFT = [real] 
+
+Default: CSHIFT	= OMEGAMAX*1.3 / max(NOMEGA,40)	for GW calculations
+= 0.1	for linear response calculations
+```
