@@ -172,3 +172,5 @@ Default: CSHIFT	= OMEGAMAX*1.3 / max(NOMEGA,40)	for GW calculations
 = 0.1	for linear response calculations
 ```
 
+- [ ] carbon nanotube, with diameter of 1.5 nm, and C-C bond length of 0.34 
+
