@@ -56,7 +56,7 @@ toc:
 
 具体表现为：所有代理的请求可以正常访问，但是直连的请求无法访问。因为后者没有做伪装，更容易被辨别。
 
-解决方法为，修改主路由的防火墙规则，将`iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE `加入到防火墙规则中，重启防火墙，同时关闭LAN口桥接（之前已经做过了）。
+解决方法为，修改旁路由的防火墙规则，将`iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE `加入到防火墙规则中，重启防火墙，同时关闭LAN口桥接（之前已经做过了）。
 
 ### DNS分流设置
 
