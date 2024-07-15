@@ -5,7 +5,7 @@ tags: [openwrt,群晖]
 categories: 生活
 giscus_comments: true
 related_posts: true
-date: 2024-7-1
+date: 1999-12-31
 toc:
   sidebar: left
 ---
