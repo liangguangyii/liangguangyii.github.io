@@ -174,5 +174,7 @@ Default: CSHIFT	= OMEGAMAX*1.3 / max(NOMEGA,40)	for GW calculations
 
 - [ ] carbon nanotube, with diameter of 1.5 nm, and C-C bond length of 0.34 
 
-- [ ] hyperpolarizability for the case of the arbitary incident light in xy plane, most TM@Au9Pt4 reach the maximum value in standard orientation, except for Sc@Au9Pt4, which has largest $$\beta_{xyz}$$.
+- [x] hyperpolarizability for the case of the arbitary incident light in xy plane, most TM@Au9Pt4 reach the maximum value in standard orientation, except for Sc@Au9Pt4, which has largest $$\beta_{xyz}$$.
+
+- [ ] Fermi surface nesting.
 
