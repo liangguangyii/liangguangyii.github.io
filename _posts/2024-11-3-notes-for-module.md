@@ -37,7 +37,7 @@ $module sh-to-mod foo-setup.sh arg1
 
 ```bash
 #%Module4.6
-source-sh bash example/source-script-in-modulefile/foo-1.2/foo-setup.sh arg1
+source-sh bash sh example/source-script-in-modulefile/foo-1.2/foo-setup.sh arg1
 ```
 
 `sh-to-mod` and `source-sh` support the following shells: sh, dash, csh, tcsh, bash, ksh, ksh93, zsh and fish.
